@@ -1,0 +1,1840 @@
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"6d6cc29302",applicationID:"1278248407"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;p("lcp",[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){if(t instanceof g&&!y){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=l.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d,p=t("handle"),l=t("loader"),v=t(9),m=t(3),g=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(h){}s=new PerformanceObserver(i);try{s.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}d=new PerformanceObserver(o);try{d.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var y=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,m(!1))})}v(c)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){y[t]=m(t).concat(e)}function v(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:h,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=P.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+P.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+P.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,h="addEventListener",y="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1212.min.js"},M=w&&b&&b[h]&&!/CriOS/.test(navigator.userAgent),P=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:M,userAgent:s,disabled:E};if(!E){t(1),t(7),g[h]?(g[h]("DOMContentLoaded",o,l(!1)),m[h]("load",r,l(!1))):(g[y]("onreadystatechange",i),m[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T7R5BTD');
+</script>
+<link rel="canonical" href="https://group.softbank/philosophy" />
+<meta name="description" content="ソフトバンクグループ株式会社（代表取締役会長 兼 社長：孫 正義、英文社名：SoftBank Group Corp.）の公式サイトです。企業情報、事業内容、グループ企業、IR情報、CSR情報をご覧いただけます。" />
+<meta property="og:site_name" content="ソフトバンクグループ株式会社" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://group.softbank/philosophy" />
+<meta property="og:title" content="理念・ビジョン・戦略 | ソフトバンクグループ株式会社" />
+<meta property="og:description" content="ソフトバンクグループ株式会社（代表取締役会長 兼 社長：孫 正義、英文社名：SoftBank Group Corp.）の公式サイトです。企業情報、事業内容、グループ企業、IR情報、CSR情報をご覧いただけます。" />
+<meta property="og:image" content="https://group.softbank/sites/default/files/assets/img/logo-group.png" />
+<meta property="article:modified_time" content="2021-08-30T17:34:21+0900" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@SoftBank_Group" />
+<meta name="twitter:image" content="https://group.softbank/sites/default/files/assets/img/logo-group-square.png" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<script type="application/ld+json"></script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Corporation"
+        },
+        {
+            "": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "ホーム",
+                        "item": "https://group.softbank/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "理念・ビジョン・戦略",
+                        "item": "https://group.softbank/philosophy"
+                    }
+                ]
+            }
+        }
+    ]
+}</script>
+<link rel="shortcut icon" href="/themes/custom/sbg/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="ja" href="https://group.softbank/philosophy" />
+<link rel="alternate" hreflang="en" href="https://group.softbank/en/philosophy" />
+<link rel="revision" href="https://group.softbank/philosophy" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.templates.twitter = "ソフトバンクグループ ${link}";</script>
+
+        <title>理念・ビジョン・戦略 | ソフトバンクグループ株式会社</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_GRHatkgBKYUci9pD3eU9wk2PwjJw2bd6083J96ywkTg.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_4sOgWcVk5-_uSVlir8vB46ooYOXavDCRX1SiAaoQDdQ.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_LsGF-tNYBXJqacef_3nzVyLHouPAYFiB7X8ZOPtoLvU.css" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/6","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"ja"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Cdiv id=\u0022cookie-attention\u0022\u003E\n        \u003Cdiv class=\u0022cookie-attention-container\u0022\u003E\n          \u003Cdl\u003E\n            \u003Cdt\u003E\n              \u003Cp\u003E\u3053\u306e\u30b5\u30a4\u30c8\u3067\u306f\u3001\u5229\u4fbf\u6027\u5411\u4e0a\u3084\u30b5\u30a4\u30c8\u6539\u5584\u306e\u305f\u3081\u306bCookie\u3092\u4f7f\u7528\u3057\u307e\u3059\u3002\u8a73\u7d30\u306f\u003Ca href=\u0022\/cookiepolicy\u0022 target=\u0022_blank\u0022\u003ECookie Policy\u003C\/a\u003E\u3092\u3054\u53c2\u7167\u304f\u3060\u3055 \u3044\u3002\u003Cbr class=\u0022visible-pc\u0022\u003E\u306a\u304a\u3001\u30d6\u30e9\u30a6\u30b6\u306e\u8a2d\u5b9a\u3067Cookie\u3092\u7121\u52b9\u306b\u3059\u308b\u3053\u3068\u3082\u53ef\u80fd\u3067\u3059\u304c\u3001\u30b5\u30a4\u30c8\u306e\u6a5f\u80fd\u304c\u5341\u5206\u306b\u3054\u5229\u7528\u3067\u304d\u306a\u3044\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059\u3002\u003C\/p\u003E\n            \u003C\/dt\u003E\n            \u003Cdd\u003E\n              \u003Ca type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003E\u627f\u8afe\u3059\u308b\u003C\/a\u003E\n            \u003C\/dd\u003E\n          \u003C\/dl\u003E\n          \u003Cdiv class=\u0022cookie-attention-close decline-button eu-cookie-compliance-default-button\u0022\u003E\n            \u003Cimg src=\u0022\/sites\/default\/files\/assets\/img\/common\/cookie_close.svg\u0022 alt=\u0022\u0022\u003E\n          \u003C\/div\u003E\n        \u003C\/div\u003E\n      \u003C\/div\u003E\n    \u003C\/div\u003E\n\n      \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Cdiv id=\u0022cookie-attention\u0022\u003E\n        \u003Cdiv class=\u0022cookie-attention-container\u0022\u003E\n          \u003Cdl\u003E\n            \u003Cdt\u003E\n              \n            \u003C\/dt\u003E\n            \u003Cdd\u003E\n              \u003Ca type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003E\u627f\u8afe\u3059\u308b\u003C\/a\u003E\n            \u003C\/dd\u003E\n          \u003C\/dl\u003E\n          \u003Cdiv class=\u0022cookie-attention-close decline-button eu-cookie-compliance-default-button\u0022\u003E\n            \u003Cimg src=\u0022\/sites\/default\/files\/assets\/img\/common\/cookie_close.svg\u0022 alt=\u0022\u0022\u003E\n          \u003C\/div\u003E\n        \u003C\/div\u003E\n      \u003C\/div\u003E\n    \u003C\/div\u003E\n\n      \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":true,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/cookiepolicy","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"ja","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":1,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"opt_in","automatic_cookies_removal":true,"allowed_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003E\u003C\/button\u003E\n\u003Cdiv role=\u0022alertdialog\u0022 aria-labelledby=\u0022popup-text\u0022 class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003E\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":false,"cookie_categories":[],"cookie_categories_details":[],"enable_save_preferences_button":true,"cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","settings_tab_enabled":false,"open_by_default":true},"ajaxTrustedUrl":{"\/search":true},"ajax":[],"user":{"uid":0,"permissionsHash":"1ae10f1b746123e637fa466d07fa911f12be7223903a54be79c8b827dc8fa86b"}}</script>
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_u9OepQzrrEOHEGWAPerUE6rwsqzO0JtU-p2KahRYgmU.js"></script>
+<script src="/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_KM3uBFnK1KjE4U58D45AWIRuR7gw8EOGcDES_vfd3vg.js"></script>
+<script src="//webfont.fontplus.jp/accessor/script/fontplus.js?iM9LmWWwO8s%3D&amp;box=HQ7CTFnMFDQ%3D&amp;aa=1&amp;ab=2"></script>
+<script src="/sites/default/files/js/js_28t5ao9wyE1FkuvVxYmkOs8tdm7RX2ct3rMU7Q9kMqA.js"></script>
+
+      </head>
+  <body class="page-node-6 path-node page-node-type-category-top">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      メインコンテンツに移動
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7R5BTD" height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+</noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+
+<div id="wrapper" class="main-container container">
+
+  <header class="header" role="heading" id="header">
+
+                <div>
+    <div id="block-sbg-branding" class="header-logo" data-block-plugin-id="system_branding_block">
+
+
+        <a href="/" rel="home">
+      <img src="/themes/custom/sbg/sbg-logo.svg" alt="ソフトバンクグループ株式会社" />
+    </a>
+
+</div>
+
+  </div>
+
+
+          <nav class="header-body" data-global-click="グローバルナビ(日)">
+              <div class="header-nav">
+                    <div>
+    <nav role="navigation" aria-labelledby="block-sbg-main-menu-lg-menu" id="block-sbg-main-menu-lg" data-block-plugin-id="system_menu_block:main">
+
+  <div class="visually-hidden" id="block-sbg-main-menu-lg-menu">メインナビゲーション</div>
+
+
+
+                <ul data-region="navigation" class="cf">
+                    <li class="expanded dropdown">
+              <a href="/news" data-type="news">
+          <p>ニュース</p>
+            <div class="header-nav-arrow">
+              <div class="link-arrow link-arrow-small">
+                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+              </div>
+            </div>
+        </a>
+                          <div class="header-menu">
+          <div class="header-menu-contents news">
+            <dl class="cf">
+              <dt>
+                <a href="/news">
+                  <p>ニュース</p>
+                  <div class="link-arrow link-arrow-large">
+                    <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+                  </div>
+                </a>
+              </dt>
+            <dd>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="header-menu-link">
+                                        <ul data-region="navigation" class="cf header-menu-main">
+                    <li>
+                <a href="/news/press" data-type="">
+            <p>プレスリリース</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/news/info" data-type="">
+            <p>お知らせ</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/news/conference" data-type="">
+            <p>記者説明会</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/news/webcast" data-type="">
+            <p>動画配信</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+        </ul>
+
+                      </div>
+                    </th>
+                                                                                </tr>
+                </tbody>
+              </table>
+            </dd>
+            </dl>
+          </div>
+          </div>
+              </li>
+                <li class="expanded dropdown is-active">
+              <a href="/philosophy" data-type="philosophy">
+          <p>理念・ビジョン・戦略</p>
+            <div class="header-nav-arrow">
+              <div class="link-arrow link-arrow-small">
+                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+              </div>
+            </div>
+        </a>
+                          <div class="header-menu">
+          <div class="header-menu-contents philosophy">
+            <dl class="cf">
+              <dt>
+                <a href="/philosophy">
+                  <p>理念・ビジョン・戦略</p>
+                  <div class="link-arrow link-arrow-large">
+                    <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+                  </div>
+                </a>
+              </dt>
+            <dd>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="header-menu-link">
+                                        <ul data-region="navigation" class="cf header-menu-main">
+                    <li>
+                <a href="/philosophy/message" data-type="">
+            <p>孫 正義　グループ代表挨拶</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/philosophy/corporate_philosophy" data-type="">
+            <p>経営理念</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/philosophy/vision" data-type="">
+            <p>ビジョン</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/philosophy/strategy" data-type="">
+            <p>群戦略</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/philosophy/value" data-type="">
+            <p>バリュー</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/philosophy/history" data-type="">
+            <p>ソフトバンクグループの歩み</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/philosophy/identity" data-type="">
+            <p>ブランド名の由来・ロゴ</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+        </ul>
+
+                      </div>
+                    </th>
+                                                                                </tr>
+                </tbody>
+              </table>
+            </dd>
+            </dl>
+          </div>
+          </div>
+              </li>
+                <li class="expanded dropdown">
+              <a href="/segments" data-type="segments">
+          <p>事業セグメント</p>
+            <div class="header-nav-arrow">
+              <div class="link-arrow link-arrow-small">
+                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+              </div>
+            </div>
+        </a>
+                          <div class="header-menu">
+          <div class="header-menu-contents segments">
+            <dl class="cf">
+              <dt>
+                <a href="/segments">
+                  <p>事業セグメント</p>
+                  <div class="link-arrow link-arrow-large">
+                    <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+                  </div>
+                </a>
+              </dt>
+            <dd>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="header-menu-link">
+                                        <ul data-region="navigation" class="cf header-menu-main">
+                    <li>
+                <a href="/segments/investmentbusiness" data-type="">
+            <p>持株会社投資事業</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/segments/svf" data-type="">
+            <p>ソフトバンク・ビジョン・ ファンド事業</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/segments/softbank" data-type="">
+            <p>ソフトバンク事業</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/segments/arm" data-type="">
+            <p>アーム事業</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/segments/latamfund" data-type="">
+            <p>ラテンアメリカ・ファンド事業</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/segments/others" data-type="">
+            <p>その他</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/segments/group" data-type="">
+            <p>グループ企業一覧</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+        </ul>
+
+                      </div>
+                    </th>
+                                                                                </tr>
+                </tbody>
+              </table>
+            </dd>
+            </dl>
+          </div>
+          </div>
+              </li>
+                <li class="expanded dropdown">
+              <a href="/ir" data-type="ir">
+          <p>IR情報</p>
+            <div class="header-nav-arrow">
+              <div class="link-arrow link-arrow-small">
+                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+              </div>
+            </div>
+        </a>
+                          <div class="header-menu">
+          <div class="header-menu-contents ir">
+            <dl class="cf">
+              <dt>
+                <a href="/ir">
+                  <p>IR情報</p>
+                  <div class="link-arrow link-arrow-large">
+                    <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+                  </div>
+                </a>
+              </dt>
+            <dd>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="header-menu-link">
+                                        <ul data-region="navigation" class="cf header-menu-main">
+                    <li>
+                <a href="/ir/news" data-type="">
+            <p>IRニュース</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/ir/calendar" data-type="">
+            <p>IRカレンダー</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/ir/presentations" data-type="">
+            <p>説明会資料・動画</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/ir/financials" data-type="">
+            <p>業績・財務</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/ir/investors" data-type="">
+            <p>個人投資家・株主向け情報</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/ir/stock" data-type="">
+            <p>株式・社債について</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/ir/disclaimer" data-type="">
+            <p>IR情報に関する免責事項</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/ir/faq" data-type="">
+            <p>よくあるご質問と回答</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+        </ul>
+
+                      </div>
+                    </th>
+                                                                                </tr>
+                </tbody>
+              </table>
+            </dd>
+            </dl>
+          </div>
+          </div>
+              </li>
+                <li class="expanded dropdown">
+              <a href="/sustainability" data-type="sustainability">
+          <p>サステナビリティ</p>
+            <div class="header-nav-arrow">
+              <div class="link-arrow link-arrow-small">
+                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+              </div>
+            </div>
+        </a>
+                          <div class="header-menu">
+          <div class="header-menu-contents sustainability">
+            <dl class="cf">
+              <dt>
+                <a href="/sustainability">
+                  <p>サステナビリティ</p>
+                  <div class="link-arrow link-arrow-large">
+                    <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+                  </div>
+                </a>
+              </dt>
+            <dd>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="header-menu-link">
+                                        <ul data-region="navigation" class="cf header-menu-main">
+                    <li>
+                <a href="/sustainability/news?year=2021" data-type="">
+            <p>サステナビリティニュース</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/message" data-type="">
+            <p>トップメッセージ</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/mission" data-type="">
+            <p>サステナビリティの考え方</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/environment" data-type="">
+            <p>環境への取り組み</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/society" data-type="">
+            <p>社会への取り組み</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/governance" data-type="">
+            <p>ガバナンス</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/esg_data" data-type="">
+            <p>ESGデータ集／社外からの評価</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/report" data-type="">
+            <p>サステナビリティレポート</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/sustainability/covid" data-type="">
+            <p>新型コロナウイルス感染症への取り組み</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+        </ul>
+
+                      </div>
+                    </th>
+                                                                                </tr>
+                </tbody>
+              </table>
+            </dd>
+            </dl>
+          </div>
+          </div>
+              </li>
+                <li class="expanded dropdown">
+              <a href="/about" data-type="about">
+          <p>企業情報</p>
+            <div class="header-nav-arrow">
+              <div class="link-arrow link-arrow-small">
+                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+              </div>
+            </div>
+        </a>
+                          <div class="header-menu">
+          <div class="header-menu-contents about">
+            <dl class="cf">
+              <dt>
+                <a href="/about">
+                  <p>企業情報</p>
+                  <div class="link-arrow link-arrow-large">
+                    <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+                  </div>
+                </a>
+              </dt>
+            <dd>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="header-menu-link">
+                                        <ul data-region="navigation" class="cf header-menu-main">
+                    <li>
+                <a href="/about/profile" data-type="">
+            <p>会社概要</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/about/officer" data-type="">
+            <p>役員一覧</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/about/corporate_governance" data-type="">
+            <p>コーポレート・ガバナンス</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/about/compliance" data-type="">
+            <p>コンプライアンス</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/about/info_security" data-type="">
+            <p>情報セキュリティ</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/about/risk_management" data-type="">
+            <p>リスクマネジメント</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+                <li>
+                <a href="/about/careers" data-type="">
+            <p>採用情報</p>
+            <div class="link-arrow">
+              <img src="/sites/default/files/assets/img/common/link_arrow_wh.svg" alt="→">
+            </div>
+          </a>
+                      </li>
+        </ul>
+
+                      </div>
+                    </th>
+                                                                                </tr>
+                </tbody>
+              </table>
+            </dd>
+            </dl>
+          </div>
+          </div>
+              </li>
+        </ul>
+
+
+
+  </nav>
+
+  </div>
+
+              </div>
+
+              <div class="header-option cf">
+                    <div>
+    <nav role="navigation" aria-labelledby="block-ourfunds-menu" id="block-ourfunds" data-block-plugin-id="system_menu_block:our-funds">
+
+  <div class="visually-hidden" id="block-ourfunds-menu">Our Funds</div>
+
+
+        <div class="header-funds">
+  <div class="header-funds-bg"></div>
+  <dl>
+    <dt>
+        Our Funds
+    </dt>
+
+
+                              <dd>
+            <ul region="navigation_bottom">
+                                  <li>
+                  <a href="https://visionfund.com/" target="_blank">Vision Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                          <li>
+                  <a href="https://www.latinamericafund.com/" target="_blank">Latin American Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                          <li>
+                  <a href="https://theopportunityfund.com/" target="_blank">Opportunity Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                        </ul>
+          </dd>
+
+
+      </dl>
+</div>
+
+  </nav>
+<div id="block-searchheader" class="header-search" data-block-plugin-id="block_content:097f5986-d120-4313-81a2-e8d83bb970ec">
+
+
+
+            <div><form action="/full-search" method="get" id="views-exposed-form-acquia-search-page-1" accept-charset="UTF-8" data-drupal-form-fields="edit-keyword">
+  <div class="js-form-item form-item js-form-type-textfield form-item-keyword js-form-item-keyword form-no-label">
+        <input placeholder="Please enter" data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="query" value="" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input data-drupal-selector="edit-category" type="hidden" id="edit-category3--3" name="sort" value="date" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="1" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="2" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="3" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="4" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input data-drupal-selector="edit-submit-acquia-search" type="submit" id="edit-submit-acquia-search" value="Site search" class="button js-form-submit form-submit"></font></font></font></font>
+</div>
+</form></div>
+
+  </div>
+<div class="language-switcher-language-url" id="block-language-switcher" role="navigation" data-block-plugin-id="language_block:language_interface">
+
+
+      <div class="header-lang">
+    <ul><li hreflang="ja" data-drupal-link-system-path="node/6" class="ja is-active"><a href="/philosophy" class="language-link is-active" hreflang="ja" data-drupal-link-system-path="node/6">JP</a></li><li hreflang="en" data-drupal-link-system-path="node/6" class="en"><a href="/en/philosophy" class="language-link" hreflang="en" data-drupal-link-system-path="node/6">English</a></li></ul>
+  </div>
+  </div>
+
+  </div>
+
+              </div>
+
+        <div class="header-sp-menu-open"></div>
+
+  </nav>
+
+              <div class="header-sp-menu">
+        <div class="header-sp-menu-close">
+          <div></div>
+        </div>
+          <div>
+    <nav role="navigation" aria-labelledby="block-sbg-main-menu-menu" id="block-sbg-main-menu" data-block-plugin-id="system_menu_block:main">
+
+  <div class="visually-hidden" id="block-sbg-main-menu-menu">メインナビゲーション</div>
+
+
+
+              <div class="header-sp-menu-search">
+        <div id="block-searchmobile" data-block-plugin-id="block_content:26e800d0-d8f5-4934-9824-71f88332ac8d">
+
+
+
+            <div><div class="views-exposed-form header-search" data-drupal-selector="views-exposed-form-acquia-search-page-1" id="block-exposedformacquia-searchpage-1" data-block-plugin-id="views_exposed_filter_block:acquia_search-page_1" style="display: none;">
+            <form action="/full-search" method="get" id="views-exposed-form-acquia-search-page-1" accept-charset="UTF-8">
+              <div class="js-form-item form-item js-form-type-textfield form-item-keyword js-form-item-keyword form-no-label">
+                <input placeholder="入力してください" data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="query" value="" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input data-drupal-selector="edit-category" type="hidden" id="edit-category3--3" name="sort" value="date" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="1" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="2" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="3" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="4" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+              </div>
+              <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                <input data-drupal-selector="edit-submit-acquia-search" type="submit" id="edit-submit-acquia-search" value="サイト内検索" class="button js-form-submit form-submit">
+              </div>
+            </form>
+          </div></div>
+
+  </div>
+
+      </div>
+      <div class="header-sp-menu-list">
+                                  <dl class="accordion">
+              <dt>
+                <a href="/news" class="news" data-drupal-link-system-path="node/1">ニュース</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/news/press" data-drupal-link-system-path="node/546">プレスリリース</a>
+            </li>
+
+            <li>
+              <a href="/news/info" data-drupal-link-system-path="node/551">お知らせ</a>
+            </li>
+
+            <li>
+              <a href="/news/conference" data-drupal-link-system-path="node/556">記者説明会</a>
+            </li>
+
+            <li>
+              <a href="/news/webcast" data-drupal-link-system-path="node/541">動画配信</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="accordion">
+              <dt>
+                <a href="/philosophy" class="philosophy is-active" data-drupal-link-system-path="node/6">理念・ビジョン・戦略</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/philosophy/message" data-drupal-link-system-path="node/456">孫 正義　グループ代表挨拶</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/corporate_philosophy" data-drupal-link-system-path="node/11776">経営理念</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/vision" data-drupal-link-system-path="node/46">ビジョン</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/strategy" data-drupal-link-system-path="node/66">群戦略</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/value" data-drupal-link-system-path="node/71">バリュー</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/history" data-drupal-link-system-path="node/2216">ソフトバンクグループの歩み</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/identity" data-drupal-link-system-path="node/976">ブランド名の由来・ロゴ</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="accordion">
+              <dt>
+                <a href="/segments" class="segments" data-drupal-link-system-path="node/11">事業セグメント</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/segments/investmentbusiness" data-drupal-link-system-path="node/10696">持株会社投資事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/svf" data-drupal-link-system-path="node/86">ソフトバンク・ビジョン・ ファンド事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/softbank" data-drupal-link-system-path="node/91">ソフトバンク事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/arm" data-drupal-link-system-path="node/246">アーム事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/latamfund" data-drupal-link-system-path="node/11761">ラテンアメリカ・ファンド事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/others" data-drupal-link-system-path="node/256">その他</a>
+            </li>
+
+            <li>
+              <a href="/segments/group" data-drupal-link-system-path="node/76">グループ企業一覧</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="accordion">
+              <dt>
+                <a href="/ir" class="ir" data-drupal-link-system-path="node/26">IR情報</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/ir/news" data-drupal-link-system-path="node/2221">IRニュース</a>
+            </li>
+
+            <li>
+              <a href="/ir/calendar" data-drupal-link-system-path="node/711">IRカレンダー</a>
+            </li>
+
+            <li>
+              <a href="/ir/presentations" data-drupal-link-system-path="node/2101">説明会資料・動画</a>
+            </li>
+
+            <li>
+              <a href="/ir/financials" data-drupal-link-system-path="node/31">業績・財務</a>
+            </li>
+
+            <li>
+              <a href="/ir/investors" data-drupal-link-system-path="node/1041">個人投資家・株主向け情報</a>
+            </li>
+
+            <li>
+              <a href="/ir/stock" data-drupal-link-system-path="node/646">株式・社債について</a>
+            </li>
+
+            <li>
+              <a href="/ir/disclaimer" data-drupal-link-system-path="node/11021">IR情報に関する免責事項</a>
+            </li>
+
+            <li>
+              <a href="/ir/faq" data-drupal-link-system-path="node/11751">よくあるご質問と回答</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="accordion">
+              <dt>
+                <a href="/sustainability" class="sustainability" data-drupal-link-system-path="node/21">サステナビリティ</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/sustainability/news?year=2021" data-drupal-link-query="{&quot;year&quot;:&quot;2021&quot;}" data-drupal-link-system-path="node/621">サステナビリティニュース</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/message" data-drupal-link-system-path="node/61">トップメッセージ</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/mission" data-drupal-link-system-path="node/181">サステナビリティの考え方</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/environment" data-drupal-link-system-path="node/121">環境への取り組み</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/society" data-drupal-link-system-path="node/631">社会への取り組み</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/governance" data-drupal-link-system-path="node/8111">ガバナンス</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/esg_data" data-drupal-link-system-path="node/10846">ESGデータ集／社外からの評価</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/report" data-drupal-link-system-path="node/2356">サステナビリティレポート</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/covid" data-drupal-link-system-path="node/11336">新型コロナウイルス感染症への取り組み</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="accordion">
+              <dt>
+                <a href="/about" class="about" data-drupal-link-system-path="node/16">企業情報</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/about/profile" data-drupal-link-system-path="node/56">会社概要</a>
+            </li>
+
+            <li>
+              <a href="/about/officer" data-drupal-link-system-path="node/101">役員一覧</a>
+            </li>
+
+            <li>
+              <a href="/about/corporate_governance" data-drupal-link-system-path="node/426">コーポレート・ガバナンス</a>
+            </li>
+
+            <li>
+              <a href="/about/compliance" data-drupal-link-system-path="node/971">コンプライアンス</a>
+            </li>
+
+            <li>
+              <a href="/about/info_security" data-drupal-link-system-path="node/471">情報セキュリティ</a>
+            </li>
+
+            <li>
+              <a href="/about/risk_management" data-drupal-link-system-path="node/2151">リスクマネジメント</a>
+            </li>
+
+            <li>
+              <a href="/about/careers" data-drupal-link-system-path="node/2081">採用情報</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                            <div class="header-sp-menu-funds">
+        <nav role="navigation" aria-labelledby="block-ourfunds-menu" id="block-ourfunds" data-block-plugin-id="system_menu_block:our-funds">
+
+  <div class="visually-hidden" id="block-ourfunds-menu">Our Funds</div>
+
+
+        <div class="header-funds">
+  <div class="header-funds-bg"></div>
+  <dl>
+    <dt>
+        Our Funds
+    </dt>
+
+
+                              <dd>
+            <ul region="navigation_bottom">
+                                  <li>
+                  <a href="https://visionfund.com/" target="_blank">Vision Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                          <li>
+                  <a href="https://www.latinamericafund.com/" target="_blank">Latin American Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                          <li>
+                  <a href="https://theopportunityfund.com/" target="_blank">Opportunity Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                        </ul>
+          </dd>
+
+
+      </dl>
+</div>
+
+  </nav>
+
+      </div>
+      </div>
+
+
+
+  </nav>
+<div class="views-exposed-form" data-drupal-selector="views-exposed-form-acquia-search-page" id="block-waibushezhifuomuacquia-searchpage" data-block-plugin-id="views_exposed_filter_block:acquia_search-page">
+
+      <h2>サイト内検索</h2>
+
+      <form region="navigation_collapsible" action="/search" method="get" id="views-exposed-form-acquia-search-page" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-textfield form-item-keyword js-form-item-keyword form-no-label">
+        <input placeholder="入力してください" data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="keyword" value="" size="30" maxlength="128" class="form-text" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-acquia-search" type="submit" id="edit-submit-acquia-search" value="サイト内検索" class="button js-form-submit form-submit" />
+</div>
+
+
+</form>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-ourfunds-2-menu" id="block-ourfunds-2" data-block-plugin-id="system_menu_block:our-funds">
+
+  <div class="visually-hidden" id="block-ourfunds-2-menu">Our Funds</div>
+
+
+        <div class="header-funds">
+  <div class="header-funds-bg"></div>
+  <dl>
+    <dt>
+        Our Funds
+    </dt>
+
+
+                              <dd>
+            <ul region="navigation_collapsible">
+                                  <li>
+                  <a href="https://visionfund.com/" target="_blank">Vision Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                          <li>
+                  <a href="https://www.latinamericafund.com/" target="_blank">Latin American Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                          <li>
+                  <a href="https://theopportunityfund.com/" target="_blank">Opportunity Funds
+                    <i class="icon-blank-wh"></i>
+                  </a>
+                              </li>
+                        </ul>
+          </dd>
+
+
+      </dl>
+</div>
+
+  </nav>
+<div id="block-searchmobile" data-block-plugin-id="block_content:26e800d0-d8f5-4934-9824-71f88332ac8d">
+
+
+
+            <div><div class="views-exposed-form header-search" data-drupal-selector="views-exposed-form-acquia-search-page-1" id="block-exposedformacquia-searchpage-1" data-block-plugin-id="views_exposed_filter_block:acquia_search-page_1" style="display: none;">
+            <form action="/full-search" method="get" id="views-exposed-form-acquia-search-page-1" accept-charset="UTF-8">
+              <div class="js-form-item form-item js-form-type-textfield form-item-keyword js-form-item-keyword form-no-label">
+                <input placeholder="入力してください" data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="query" value="" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input data-drupal-selector="edit-category" type="hidden" id="edit-category3--3" name="sort" value="date" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="1" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="2" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="3" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+<input placeholder="ニュース検索" data-drupal-selector="edit-category" type="hidden" id="edit-category2--3" name="category" value="4" size="30" maxlength="128" class="form-text" style="font-family: fontplus-unused;">
+              </div>
+              <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                <input data-drupal-selector="edit-submit-acquia-search" type="submit" id="edit-submit-acquia-search" value="サイト内検索" class="button js-form-submit form-submit">
+              </div>
+            </form>
+          </div></div>
+
+  </div>
+
+  </div>
+
+      </div>
+
+</header>
+
+
+    <main>
+    <article>
+
+
+
+          <div class="headline-mv" style="background-image: url(/system/files/assets/img/vision/common/mv_lower.jpg);">
+
+                        <div>
+    <div id="block-sbg-breadcrumbs" data-block-plugin-id="system_breadcrumb_block">
+
+
+        <div id="system-breadcrumb" class="visually-hidden">パンくず</div>
+  <div id="breadcrumb">
+    <ul class="cf">
+          <li>
+                  <a href="/">ホーム</a>
+              </li>
+          <li>
+                  理念・ビジョン・戦略
+              </li>
+        </ul>
+  </div>
+
+  </div>
+
+  </div>
+
+
+    <div class="headline-mv-body">
+      <div class="headline-mv-title">
+                  <h1>理念・ビジョン・戦略</h1>
+                      </div>
+    </div>
+              </div>
+
+
+
+        <div>
+
+  </div>
+
+              <div class="highlighted">  <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+</div>
+
+
+      <a id="main-content"></a>
+          <div>
+    <div id="block-sbg-content" data-block-plugin-id="system_main_block">
+
+
+      <article data-history-node-id="6" role="article" about="/philosophy">
+
+
+  <div>
+
+            <div><div class="vision-top-mv">
+    <div class="vision-top-mv-bg">
+    </div>
+
+    <div id="breadcrumb">
+        <ul class="cf">
+            <li><a href="/">ホーム</a></li>
+            <li>理念・ビジョン・戦略</li>
+        </ul>
+    </div>
+
+    <div class="vision-top-mv-title">
+        <h1>
+            理念・ビジョン・戦略
+        </h1>
+    </div>
+
+    <div class="vision-top-mv-box">
+        <h2>300年間成長し続ける 企業グループを目指して</h2>
+
+        <p>
+            ソフトバンクグループは、創業当初から、テクノロジーが人々にとってより幸せで充実した未来を築くための鍵であると考え、情報革命のパイオニアとして、数十年前の人々にはほとんど想像できなかったような手段でコミュニケーションを変えてきました。
+        </p>
+
+        <p>
+            情報革命における最先端の分野は、パソコンからインターネット、そしてブロードバンド、さらにはスマートフォンへと変遷してきましたが、私たちは常にその変化の最前線に立ち、それに合わせてビジネスモデルを進化させてきました。
+        </p>
+
+        <p>
+            そして今、すべての産業を再定義しようとしているAI（人工知能）革命によって、変革は新たなステージを迎えました。私たちはAI革命がこの数十年で、過去300年を超えるイノベーションと革新をもたらすと信じています。旅行の仕方からワークスタイル、病気の発見から治療、都市の建設から食料の栽培まで、私たちのライフスタイルは一変するでしょう。ソフトバンクグループは、 AIや画期的なテクノロジーの展開を加速させ、人々の幸せに貢献したいという思いで、ビジョン・ファンドなどを通じて、AIという投資テーマに基づき世界中の企業に投資を行っています。そして、私たちは「情報革命の資本家」として、AIを駆使する起業家とビジョンや志を共有し、共に未来を切り開いていくことを目指しています。最近「ソフトバンクグループはVC＝ベンチャーキャピタル（Venture Capital）なのか？」と聞かれることがありますが、私たちは「VC＝ビジョンキャピタリスト（Vision Capitalist）」だと考えています。
+        </p>
+
+        <p>
+            私たちは、無限の可能性を秘めた時代の到来を告げる新しいテクノロジーやビジネスモデルを有する起業家とのエコシステムの構築を通じて、人類の進歩に投資しています。
+        </p>
+
+        <p>
+            ソフトバンクグループは、AIと画期的なテクノロジーを正しく活用することで、より人と人とがつながりやすく、効率的に、そして喜びに満ちた世界を実現できると信じています。私たちの経営理念「情報革命で人々を幸せに」には、テクノロジーを通じて、世界中の人々がより幸せで充実した生活を送れるようにという思いを込めています。
+        </p>
+    </div>
+</div>
+
+<div class="vision-top-wrap">
+    <div class="vision-top-movie">
+        <ul>
+            <li>
+                <div class="vision-top-movie-box">
+                    <a href="_eKyHPLwFpM" class="modal-yt-open">
+                        <div class="vision-top-movie-box-pic" style="background-image: url(/sites/default/files/assets/img/philosophy/movie_pic_01.jpg);">
+                            <img src="/sites/default/files/assets/img/philosophy/movie_pic_01.jpg" alt="Information Revolution">
+                        </div>
+
+                        <div c class="vision-top-movie-box-icon">
+                            <p>
+                                <img src="/sites/default/files/assets/img/common/icon_movie_play.svg" alt="play">
+                                <span>Watch the Video</span>
+                            </p>
+                        </div>
+                    </a>
+                    <p>
+                        Information Revolution
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="vision-top-movie-box">
+                    <a href="XUulmruH7XM" class="modal-yt-open">
+                        <div class="vision-top-movie-box-pic" style="background-image: url(/sites/default/files/assets/img/philosophy/movie_pic_02.jpg);">
+                            <img src="/sites/default/files/assets/img/philosophy/movie_pic_02.jpg" alt="Investing in human progress">
+                        </div>
+
+                        <div class="vision-top-movie-box-icon">
+                            <p>
+                                <img src="/sites/default/files/assets/img/common/icon_movie_play.svg" alt="play">
+                                <span>Watch the Video</span>
+                            </p>
+                        </div>
+                    </a>
+                    <p>
+                        Investing in human progress
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="vision-top-link">
+        <div class="vision-top-link-box">
+            <a href="/philosophy/message">
+                <dl>
+                    <dt style="background-image: url(/sites/default/files/assets/img/philosophy/link_pic_01.jpg);">
+                        <img src="/sites/default/files/assets/img/philosophy/sp/link_pic_01.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <div class="vision-top-link-box-body">
+                            <div class="vision-top-link-box-body-inner">
+                                <p class="vision-top-link-box-subtitle">メッセージ</p>
+                                <p class="vision-top-link-box-title">孫 正義<br>ソフトバンクグループ代表挨拶</p>
+                            </div>
+
+                            <div class="vision-top-link-box-arrow">
+                                <div class="link-arrow">
+                                    <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+
+        <div class="vision-top-link-box">
+            <a href="/philosophy/corporate_philosophy">
+                <dl>
+                    <dt style="background-image: url(/sites/default/files/assets/img/philosophy/link_pic_03.jpg);">
+                        <img src="/sites/default/files/assets/img/philosophy/link_pic_03.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <div class="vision-top-link-box-body">
+                            <div class="vision-top-link-box-body-inner">
+                                <p class="vision-top-link-box-subtitle">経営理念</p>
+                                <p class="vision-top-link-box-title">情報革命で人々を幸せに</p>
+                            </div>
+
+                            <div class="vision-top-link-box-arrow">
+                                <div class="link-arrow">
+                                    <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+
+        <div class="vision-top-link-box">
+            <a href="/philosophy/vision">
+                <dl>
+                    <dt style="background-image: url(/sites/default/files/assets/img/philosophy/link_pic_02.jpg);">
+                        <img src="/sites/default/files/assets/img/philosophy/link_pic_02.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <div class="vision-top-link-box-body">
+                            <div class="vision-top-link-box-body-inner">
+                                <p class="vision-top-link-box-subtitle">ビジョン</p>
+                                <p class="vision-top-link-box-title">「世界の人々から最も必要とされる企業グループ」を目指して</p>
+                            </div>
+
+                            <div class="vision-top-link-box-arrow">
+                                <div class="link-arrow">
+                                    <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+    </div>
+
+    <div class="contents-body contents-full-sp">
+        <div class="vision-top-list">
+            <div class="linkbox-list">
+                <ul>
+                    <li>
+                        <div class="linkbox">
+                            <a href="/philosophy/strategy">
+                                <dl>
+                                    <dt>
+                                        群戦略
+
+                                        <div class="linkbox-arrow">
+                                            <div class="link-arrow">
+                                                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        No.1の企業群と同志的結合を通じてシナジーを創出しながら、共に進化・成長を続けるために。
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="linkbox">
+                            <a href="/philosophy/value">
+                                <dl>
+                                    <dt>
+                                        バリュー
+
+                                        <div class="linkbox-arrow">
+                                            <div class="link-arrow">
+                                                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        成長し続けるソフトバンクグループのDNA。ソフトバンクバリュー「努力って、楽しい。」
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="linkbox">
+                            <a href="/philosophy/identity">
+                                <dl>
+                                    <dt>
+                                        ブランド名の由来・ロゴ
+
+                                        <div class="linkbox-arrow">
+                                            <div class="link-arrow">
+                                                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        21世紀の海援隊旗は、新しい世界を生み出そうとするソフトバンクグループの情報革命の象徴です。
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="linkbox">
+                            <a href="/philosophy/history">
+                                <dl>
+                                    <dt>
+                                        ソフトバンクグループの歩み
+
+                                        <div class="linkbox-arrow">
+                                            <div class="link-arrow">
+                                                <img src="/sites/default/files/assets/img/common/link_arrow_bk.svg" alt="→">
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        変わり続ける「投資領域」、創業来変わらない「志」
+                                    </dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+
+          </article>
+    <div id="btn-pagetop">
+      <a href="#">
+        <img src="/sites/default/files/assets/img/common/btn_pagetop.svg" alt="トップページ">
+      </a>
+    </div>
+  </main>
+
+
+            <footer class="footer container" role="contentinfo" id="footer" data-footer-click="フッター(日)">
+    <div class="footer-inner">
+      <div class="footer-option">
+        <ul class="cf">
+          <li class="footer-scale">
+            <dl>
+              <dt>
+                文字サイズ
+              </dt>
+              <dd>
+                <a href="small">A</a>
+              </dd>
+              <dd>
+                <a href="medium">A</a>
+              </dd>
+              <dd>
+                <a href="large">A</a>
+              </dd>
+            </dl>
+          </li>
+          <li class="footer-print">
+            <p>
+              印刷
+            </p>
+          </li>
+        </ul>
+      </div>
+        <div>
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" data-block-plugin-id="system_menu_block:main">
+
+  <div class="visually-hidden" id="block-mainnavigation-menu">Main navigation</div>
+
+
+
+
+              <div class="footer-nav cf">
+                                  <dl class="footer-nav-ニュース accordion">
+              <dt>
+                <a href="/news" class="news" data-drupal-link-system-path="node/1">ニュース</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/news/press" data-drupal-link-system-path="node/546">プレスリリース</a>
+            </li>
+
+            <li>
+              <a href="/news/info" data-drupal-link-system-path="node/551">お知らせ</a>
+            </li>
+
+            <li>
+              <a href="/news/conference" data-drupal-link-system-path="node/556">記者説明会</a>
+            </li>
+
+            <li>
+              <a href="/news/webcast" data-drupal-link-system-path="node/541">動画配信</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="footer-nav-理念・ビジョン・戦略 accordion">
+              <dt>
+                <a href="/philosophy" class="philosophy is-active" data-drupal-link-system-path="node/6">理念・ビジョン・戦略</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/philosophy/message" data-drupal-link-system-path="node/456">孫 正義　グループ代表挨拶</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/corporate_philosophy" data-drupal-link-system-path="node/11776">経営理念</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/vision" data-drupal-link-system-path="node/46">ビジョン</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/strategy" data-drupal-link-system-path="node/66">群戦略</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/value" data-drupal-link-system-path="node/71">バリュー</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/history" data-drupal-link-system-path="node/2216">ソフトバンクグループの歩み</a>
+            </li>
+
+            <li>
+              <a href="/philosophy/identity" data-drupal-link-system-path="node/976">ブランド名の由来・ロゴ</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="footer-nav-事業セグメント accordion">
+              <dt>
+                <a href="/segments" class="segments" data-drupal-link-system-path="node/11">事業セグメント</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/segments/investmentbusiness" data-drupal-link-system-path="node/10696">持株会社投資事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/svf" data-drupal-link-system-path="node/86">ソフトバンク・ビジョン・ ファンド事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/softbank" data-drupal-link-system-path="node/91">ソフトバンク事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/arm" data-drupal-link-system-path="node/246">アーム事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/latamfund" data-drupal-link-system-path="node/11761">ラテンアメリカ・ファンド事業</a>
+            </li>
+
+            <li>
+              <a href="/segments/others" data-drupal-link-system-path="node/256">その他</a>
+            </li>
+
+            <li>
+              <a href="/segments/group" data-drupal-link-system-path="node/76">グループ企業一覧</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="footer-nav-IR情報 accordion">
+              <dt>
+                <a href="/ir" class="ir" data-drupal-link-system-path="node/26">IR情報</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/ir/news" data-drupal-link-system-path="node/2221">IRニュース</a>
+            </li>
+
+            <li>
+              <a href="/ir/calendar" data-drupal-link-system-path="node/711">IRカレンダー</a>
+            </li>
+
+            <li>
+              <a href="/ir/presentations" data-drupal-link-system-path="node/2101">説明会資料・動画</a>
+            </li>
+
+            <li>
+              <a href="/ir/financials" data-drupal-link-system-path="node/31">業績・財務</a>
+            </li>
+
+            <li>
+              <a href="/ir/investors" data-drupal-link-system-path="node/1041">個人投資家・株主向け情報</a>
+            </li>
+
+            <li>
+              <a href="/ir/stock" data-drupal-link-system-path="node/646">株式・社債について</a>
+            </li>
+
+            <li>
+              <a href="/ir/disclaimer" data-drupal-link-system-path="node/11021">IR情報に関する免責事項</a>
+            </li>
+
+            <li>
+              <a href="/ir/faq" data-drupal-link-system-path="node/11751">よくあるご質問と回答</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="footer-nav-サステナビリティ accordion">
+              <dt>
+                <a href="/sustainability" class="sustainability" data-drupal-link-system-path="node/21">サステナビリティ</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/sustainability/news?year=2021" data-drupal-link-query="{&quot;year&quot;:&quot;2021&quot;}" data-drupal-link-system-path="node/621">サステナビリティニュース</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/message" data-drupal-link-system-path="node/61">トップメッセージ</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/mission" data-drupal-link-system-path="node/181">サステナビリティの考え方</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/environment" data-drupal-link-system-path="node/121">環境への取り組み</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/society" data-drupal-link-system-path="node/631">社会への取り組み</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/governance" data-drupal-link-system-path="node/8111">ガバナンス</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/esg_data" data-drupal-link-system-path="node/10846">ESGデータ集／社外からの評価</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/report" data-drupal-link-system-path="node/2356">サステナビリティレポート</a>
+            </li>
+
+            <li>
+              <a href="/sustainability/covid" data-drupal-link-system-path="node/11336">新型コロナウイルス感染症への取り組み</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                                        <dl class="footer-nav-企業情報 accordion">
+              <dt>
+                <a href="/about" class="about" data-drupal-link-system-path="node/16">企業情報</a>
+                <div class="accordion-head"></div>
+              </dt>
+                                              <dd class="accordion-body">
+        <ul>
+
+            <li>
+              <a href="/about/profile" data-drupal-link-system-path="node/56">会社概要</a>
+            </li>
+
+            <li>
+              <a href="/about/officer" data-drupal-link-system-path="node/101">役員一覧</a>
+            </li>
+
+            <li>
+              <a href="/about/corporate_governance" data-drupal-link-system-path="node/426">コーポレート・ガバナンス</a>
+            </li>
+
+            <li>
+              <a href="/about/compliance" data-drupal-link-system-path="node/971">コンプライアンス</a>
+            </li>
+
+            <li>
+              <a href="/about/info_security" data-drupal-link-system-path="node/471">情報セキュリティ</a>
+            </li>
+
+            <li>
+              <a href="/about/risk_management" data-drupal-link-system-path="node/2151">リスクマネジメント</a>
+            </li>
+
+            <li>
+              <a href="/about/careers" data-drupal-link-system-path="node/2081">採用情報</a>
+            </li>
+                                        </ul>
+      </dd>
+
+                                </dl>
+                            </div>
+
+
+
+  </nav>
+<div id="block-footerglobalwebsite" data-block-plugin-id="block_content:fd6288da-eae3-4ee3-bb15-2f3a9e267e94">
+
+
+
+            <div><div class="footer-sns">
+            <ul>
+                <!--<li>
+                    <a href="https://global.softbank" target="_blank">Global Website<i class="icon-blank-wh"></i></a>
+                </li>-->
+<li>
+                    Follow Us
+                </li><li class="footer-sns-yt">
+                    <a href="https://www.youtube.com/c/SoftBankGroup" target="_blank"><img src="/sites/default/files/assets/img/common/icon_yt.svg" alt="You Tube"></a>
+                </li><li class="footer-sns-tw">
+                    <a href="https://twitter.com/softbank_group" target="_blank"><img src="/sites/default/files/assets/img/common/icon_tw.svg" alt="Twitter"></a>
+                </li>
+            </ul>
+        </div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-sbg-footer-menu" id="block-sbg-footer" data-block-plugin-id="system_menu_block:footer">
+
+  <div class="visually-hidden" id="block-sbg-footer-menu">フッターメニュー</div>
+
+
+
+
+        <div class="footer-link">
+      <ul>
+           <li> <a href="/privacy" data-drupal-link-system-path="node/186">個人情報の取り扱いについて</a> </li>
+           <li> <a href="/sitepolicy" data-drupal-link-system-path="node/9356">サイトポリシー</a> </li>
+           <li> <a href="/cookiepolicy" data-drupal-link-system-path="node/9536">クッキーポリシー</a> </li>
+           <li> <a href="/legalnotice" data-drupal-link-system-path="node/81">免責事項</a> </li>
+           <li> <a href="/contact" data-drupal-link-system-path="node/9396">お問い合わせ</a> </li>
+           <li> <a href="/sitemap" data-drupal-link-system-path="node/9546">サイトマップ</a> </li>
+          </ul>
+      </div>
+
+
+
+  </nav>
+
+  </div>
+
+      <div class="footer-copy">
+        Copyright © SoftBank Group Corp. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <div class="modal-yt">
+      <div class="modal-yt-bg"></div>
+
+      <div class="modal-yt-body">
+          <div class="modal-yt-contents">
+              <div class="modal-yt-close"><img src="/sites/default/files/assets/img/common/icon_modal_close.svg" alt="close"></div>
+              <div id="modal-yt-player"></div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  </div>
+
+
+    <script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/default/files/js/js_m3eeW-SmZaSYwoZh_VH7-UAiYQGGuYaZKVfalzeoLLk.js"></script>
+<script src="/modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance.js?v=9.2.7" defer></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6d6cc29302","applicationID":"1278248407","transactionName":"YQcBZRAHVkFUWhBaC1hNIlIWD1dcGn0WRhRXDj9fDQJdbnZWCkcWWQ4PVBA6dl1RXDJaAUEhDF8WFFdeWVwWHlpACwZG","queueTime":0,"applicationTime":1353,"atts":"TUACE1gdRU8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

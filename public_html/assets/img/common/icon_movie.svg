@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="icon_movie" transform="translate(8 8)">
+    <g id="グループ_75656" data-name="グループ 75656" transform="translate(-8 -8)">
+      <circle id="楕円形_273" data-name="楕円形 273" cx="8" cy="8" r="8" fill="#785fab"/>
+      <path id="多角形_3" data-name="多角形 3" d="M119.661,95.305a.309.309,0,0,1,.085.432.315.315,0,0,1-.085.085l-4.171,2.752a.32.32,0,0,1-.437-.091.309.309,0,0,1-.053-.171v-5.5a.315.315,0,0,1,.315-.315.32.32,0,0,1,.176.053Z" transform="translate(-108.867 -87.567)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

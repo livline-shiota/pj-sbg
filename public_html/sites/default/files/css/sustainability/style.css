@@ -1,0 +1,277 @@
+.sustainability-movie {
+  background-image: url("/assets/img/sustainability/movie_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sustainability-movie > div {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 120px;
+}
+
+.sustainability-movie > div .sustainability-movie-title {
+  font-size: 2.0rem;
+  line-height: 1.6em;
+  font-weight: 500;
+}
+
+.sustainability-movie > div > ul {
+  margin-top: 60px;
+}
+
+.sustainability-movie > div > ul > li:first-of-type {
+  float: left;
+  position: relative;
+  width: 608px;
+  height: 340px;
+}
+
+.sustainability-movie > div > ul > li:first-of-type > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sustainability-movie > div > ul > li:last-of-type {
+  float: right;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 350px;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li > a {
+  font-size: 1.8rem;
+  line-height: 1.6em;
+  display: table;
+  width: 100%;
+  padding-left: 30px;
+  color: #333333;
+  position: relative;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li > a > p {
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li > a .sustainability-movie-arrow {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li > a.press > p {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li:first-of-type > a {
+  height: 230px;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li:last-of-type {
+  margin-top: 2px;
+}
+
+.sustainability-movie > div > ul > li:last-of-type > ul > li:last-of-type > a {
+  height: 108px;
+}
+
+#wrapper.browser-device-pc .sustainability-movie > div > ul > li:last-of-type > ul > li > a:hover > p {
+  opacity: 0.5;
+}
+
+.sustainability-link {
+  width: 100%;
+  max-width: 960px;
+  margin: 60px auto 0;
+  position: relative;
+}
+
+.sustainability-panel-link {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 60px auto 0;
+}
+
+.sustainability-panel-link a {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 300px;
+  color: #FFFFFF;
+  opacity: 1 !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.sustainability-panel-link a .panel-link-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+}
+
+.sustainability-panel-link a .panel-link-bg > img {
+  width: auto;
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.sustainability-panel-link a .panel-link-bg:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sustainability-panel-link a .panel-link-body {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sustainability-panel-link a .panel-link-body .panel-link-title {
+  font-size: 2.4rem;
+  line-height: 1.6em;
+  position: relative;
+}
+
+.sustainability-panel-link a .panel-link-body .panel-link-title > * {
+  font-weight: 500;
+}
+
+.sustainability-panel-link a .panel-link-arrow {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.sustainability-panel-link a.press .panel-link-bg {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sustainability-panel-link a.press .panel-link-bg:after {
+  opacity: 0.1;
+}
+
+#wrapper.browser-device-pc .sustainability-panel-link a:hover .panel-link-bg {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#wrapper.browser-device-pc .sustainability-panel-link a:hover .panel-link-bg:after {
+  opacity: 0.1;
+}
+
+@media screen and (max-width: 768px) {
+  .sustainability-movie > div {
+    padding: 60px 30px 80px;
+  }
+  .sustainability-movie > div .sustainability-movie-title {
+    font-size: 1.8rem;
+  }
+  .sustainability-movie > div > ul > li:first-of-type {
+    float: none;
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+  }
+  .sustainability-movie > div > ul > li:last-of-type {
+    float: none;
+  }
+  .sustainability-movie > div > ul > li:last-of-type > ul > li {
+    width: 100%;
+  }
+  .sustainability-movie > div > ul > li:last-of-type > ul > li > a {
+    padding-left: 20px;
+  }
+  .sustainability-movie > div > ul > li:last-of-type > ul > li > a .sustainability-movie-arrow {
+    right: 20px;
+    bottom: 20px;
+  }
+  .sustainability-movie > div > ul > li:last-of-type > ul > li:first-of-type {
+    margin-top: 2px;
+  }
+  .sustainability-movie > div > ul > li:last-of-type > ul > li:first-of-type > a {
+    height: 120px;
+  }
+  .sustainability-movie > div > ul > li:last-of-type > ul > li:last-of-type > a {
+    height: 80px;
+  }
+  .sustainability-link {
+    padding: 0 30px;
+    max-width: 480px;
+  }
+  .sustainability-link > ul > li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .sustainability-link > ul > li:last-of-type {
+    margin-bottom: 0;
+  }
+  .sustainability-panel-link {
+    max-width: 480px;
+  }
+  .sustainability-panel-link a {
+    height: auto;
+    padding-top: 100%;
+  }
+  .sustainability-panel-link a .panel-link-bg > img {
+    position: static;
+    width: 100%;
+    height: auto;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .sustainability-panel-link a .panel-link-body .panel-link-title {
+    padding: 0 30px;
+    width: 100%;
+    font-size: 2.0rem;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sustainability-link > ul > li {
+    width: 460px;
+    float: left;
+  }
+  .sustainability-link > ul > li:nth-of-type(even) {
+    float: right;
+  }
+  .sustainability-link > ul > li:nth-of-type(n+3) {
+    margin-top: 30px;
+  }
+}

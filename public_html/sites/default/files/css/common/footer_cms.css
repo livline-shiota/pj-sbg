@@ -1,0 +1,342 @@
+@charset "UTF-8";
+#footer {
+  position: relative;
+  z-index: 2;
+  background-color: #828588;
+  padding: 95px 0;
+  color: #FFFFFF;
+}
+
+#footer a {
+  color: #FFFFFF;
+}
+
+#footer .footer-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#footer .footer-inner .footer-option {
+  margin-bottom: 90px;
+}
+
+#footer .footer-inner .footer-option > ul > li {
+  float: left;
+  width: 240px;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl {
+  font-size: "FrutigerNeueLTW1G-Medium", "FP-ヒラギノUD角ゴ StdN W5";
+  margin-top: -10px;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dt {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 1.4rem;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dd {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dd:last-of-type {
+  margin-right: 0;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dd a {
+  text-decoration: none;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dd a.on {
+  border-bottom: 4px solid #fff;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dd a[href="small"] {
+  font-size: 15px;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dd a[href="medium"] {
+  font-size: 21px;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-scale > dl > dd a[href="large"] {
+  font-size: 26px;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-print p {
+  cursor: pointer;
+  line-height: 21px;
+  font-size: 1.4rem;
+}
+
+#footer .footer-inner .footer-option > ul > li.footer-print p:before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  background-image: url(/sites/default/files/assets/img/common/icon_print.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: bottom;
+}
+
+#footer .footer-inner .footer-nav {
+  margin-bottom: 20px;
+}
+
+#footer .footer-inner .footer-nav > dl {
+  padding: 45px 0 80px;
+  float: left;
+  width: 240px;
+  position: relative;
+  padding-right: 40px;
+}
+
+#footer .footer-inner .footer-nav > dl:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #fff;
+}
+
+#footer .footer-inner .footer-nav > dl > dt {
+  font-size: 1.8rem;
+  font-family: "FrutigerNeueLTW1G-Medium", "FP-ヒラギノUD角ゴ StdN W5";
+  margin-bottom: 30px;
+}
+
+#footer .footer-inner .footer-nav > dl > dt .accordion-head {
+  display: none;
+}
+
+#footer .footer-inner .footer-nav > dl > dd > ul > li {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  text-indent: -1.0em;
+  padding-left: 1.0em;
+}
+
+#footer .footer-inner .footer-nav > dl > dd > ul > li > a {
+  line-height: 1.3;
+}
+
+#footer .footer-inner .footer-nav > dl > dd > ul > li > a:before {
+  content: "・";
+}
+
+#footer .footer-inner .footer-nav > dl > dd > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+#footer .footer-inner .footer-nav > dl:nth-of-type(4n + 1) {
+  clear: both;
+}
+
+#footer .footer-inner .footer-nav > dl.footer-nav-parent:before {
+  width: 100%;
+}
+
+#footer .footer-inner .footer-nav > dl.footer-nav-child:before {
+  width: 100%;
+}
+
+#footer .footer-inner .footer-nav > dl.footer-nav-child.last:before {
+  width: 200px;
+}
+
+#footer .footer-inner .footer-nav > dl.footer-nav-child > dt {
+  visibility: hidden;
+}
+
+#footer .footer-inner .footer-sns {
+  margin-bottom: 45px;
+}
+
+#footer .footer-inner .footer-sns > ul {
+  font-family: "FrutigerNeueLTW1G-Medium", "FP-ヒラギノUD角ゴ StdN W5";
+  text-align: center;
+}
+
+#footer .footer-inner .footer-sns > ul > li {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  position: relative;
+}
+
+#footer .footer-inner .footer-sns > ul > li:first-of-type {
+  margin-right: 25px;
+}
+
+#footer .footer-inner .footer-sns > ul > li:last-of-type {
+  margin: 0;
+}
+
+#footer .footer-inner .footer-sns > ul > li.footer-sns-yt {
+  width: 36px;
+  margin-right: 10px;
+  top: 10px;
+}
+
+#footer .footer-inner .footer-sns > ul > li.footer-sns-tw {
+  width: 36px;
+  top: 10px;
+}
+
+#footer .footer-inner .footer-link {
+  margin-bottom: 30px;
+}
+
+#footer .footer-inner .footer-link > ul {
+  text-align: center;
+}
+
+#footer .footer-inner .footer-link > ul > li {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+#footer .footer-inner .footer-link > ul > li:after {
+  content: "｜";
+  margin: 0 10px;
+}
+
+#footer .footer-inner .footer-link > ul > li:last-of-type:after {
+  display: none;
+}
+
+#footer .footer-inner .footer-copy {
+  text-align: center;
+  font-size: 1.0rem;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    padding: 50px 30px 40px;
+  }
+  #footer .footer-inner {
+    width: 100%;
+  }
+  #footer .footer-inner .footer-option {
+    margin-bottom: 40px;
+  }
+  #footer .footer-inner .footer-option > ul > li {
+    float: none;
+    width: 100%;
+  }
+  #footer .footer-inner .footer-option > ul > li.footer-scale {
+    margin-bottom: 30px;
+  }
+  #footer .footer-inner .footer-nav {
+    margin-bottom: 60px;
+  }
+  #footer .footer-inner .footer-nav > dl {
+    border-top: 1px solid #fff;
+    float: none;
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+  }
+  #footer .footer-inner .footer-nav > dl:before {
+    display: none;
+  }
+  #footer .footer-inner .footer-nav > dl > dt {
+    font-family: "FrutigerNeueLTW1G-Medium", "FP-ヒラギノUD角ゴ StdN W5";
+    margin-bottom: 0;
+    padding: 30px 0;
+    position: relative;
+  }
+  #footer .footer-inner .footer-nav > dl > dt .accordion-head {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  #footer .footer-inner .footer-nav > dl > dt .accordion-head:before, #footer .footer-inner .footer-nav > dl > dt .accordion-head:after {
+    content: "";
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #footer .footer-inner .footer-nav > dl > dt .accordion-head:before {
+    width: 2px;
+    height: 100%;
+  }
+  #footer .footer-inner .footer-nav > dl > dt .accordion-head:after {
+    width: 100%;
+    height: 2px;
+  }
+  #footer .footer-inner .footer-nav > dl > dd {
+    padding-bottom: 30px;
+  }
+  #footer .footer-inner .footer-nav > dl > dd > ul > li {
+    margin-bottom: 20px;
+  }
+  #footer .footer-inner .footer-nav > dl > dd > ul > li:last-of-type {
+    margin-bottom: 0;
+  }
+  #footer .footer-inner .footer-nav > dl.on > dt .accordion-head:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  #footer .footer-inner .footer-nav > dl.on > dt .accordion-head:after {
+    opacity: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  #footer .footer-inner .footer-nav > dl:last-of-type {
+    border-bottom: 1px solid #fff;
+  }
+  #footer .footer-inner .footer-sns {
+    margin-bottom: 60px;
+  }
+  #footer .footer-inner .footer-sns > ul {
+    text-align: left;
+  }
+  #footer .footer-inner .footer-sns > ul > li:first-of-type {
+    font-size: 1.4rem;
+    display: block;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  #footer .footer-inner .footer-sns > ul > li.footer-sns-yt {
+    margin-right: 5px;
+  }
+  #footer .footer-inner .footer-link {
+    margin-bottom: 70px;
+  }
+  #footer .footer-inner .footer-link > ul {
+    text-align: left;
+  }
+  #footer .footer-inner .footer-link > ul > li {
+    display: block;
+    margin-bottom: 30px;
+  }
+  #footer .footer-inner .footer-link > ul > li:after {
+    display: none;
+  }
+  #footer .footer-inner .footer-link > ul > li:last-of-type {
+    margin-bottom: 0;
+  }
+  #footer .footer-inner .footer-copy {
+    text-align: left;
+  }
+}

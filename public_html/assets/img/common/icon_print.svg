@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="icon_print" transform="translate(11 11)">
+    <g id="icon_print-2" data-name="icon_print" transform="translate(-11 -11)">
+      <circle id="楕円形_1229" data-name="楕円形 1229" cx="0.779" cy="0.779" r="0.779" transform="translate(3.699 9.345)" fill="#fff"/>
+      <path id="パス_64143" data-name="パス 64143" d="M29.366,109.239H26.5V102H44.706v7.239H41.928" transform="translate(-24.562 -94.542)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.243"/>
+      <path id="パス_64144" data-name="パス 64144" d="M79.357,47.168V45.084L77.3,43.037,67,43v4.168" transform="translate(-62.101 -39.856)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.243"/>
+      <rect id="長方形_8976" data-name="長方形 8976" width="12.46" height="7.009" transform="translate(4.867 12.265)" stroke-width="1.247" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line id="線_2914" data-name="線 2914" x2="5.484" transform="translate(8.299 14.587)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.243"/>
+      <line id="線_2915" data-name="線 2915" x2="5.484" transform="translate(8.299 16.78)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.243"/>
+      <path id="パス_64145" data-name="パス 64145" d="M209.5,42.767h2.12L209.5,40.5Z" transform="translate(-194.182 -37.539)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.658"/>
+      <rect id="長方形_8977" data-name="長方形 8977" width="22" height="22" fill="none"/>
+    </g>
+  </g>
+</svg>

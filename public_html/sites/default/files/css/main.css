@@ -1,0 +1,307 @@
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, summary, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: "";
+    content: none
+}
+
+a, h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0
+}
+
+a {
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    border: none;
+    outline: none
+}
+
+a, a:focus, a:hover {
+    transition: all .3s ease
+}
+
+a, a:focus, a:hover, a:link {
+    /* text-decoration: none */
+}
+
+a img {
+    outline: none
+}
+
+a img:active, a img:focus, a img:hover {
+    outline: none;
+    -moz-outline-style: none
+}
+
+.btn, .btn.active:focus, .btn:active, .btn:focus, .btn:hover, button, button:active, button:focus, button:hover {
+    outline: none;
+    outline: 0
+}
+
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none
+}
+
+.breadcrumbs {
+    padding: 10px 0
+}
+
+.user-logged-in #block-sbg-main-menu-lg {
+    position: unset
+}
+
+.form-item input.error, .form-item select.error, .form-item textarea.error {
+    border: 2px solid red
+}
+
+.form-item--error-message:before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    content: "";
+    vertical-align: sub;
+    background-size: contain
+}
+
+#header .header-option .header-lang>dl {
+    background-image: url(/sites/default/files/assets/img/common/arrow_down.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: right 12px center
+}
+
+main.no-header {
+    padding-left: 0
+}
+
+#footer.no-header {
+    margin-left: 0
+}
+
+.contents-body .align-left, .contents-body .align-right {
+    float: none
+}
+
+.article-text {
+    text-align: left
+}
+
+.nowrap .article-text, div[class*=article-head].nowrap .article-title {
+    white-space: normal;
+    line-height: 1.8em
+}
+
+.search-word {
+    position: relative
+}
+
+input[data-drupal-selector^=edit-submit-acquia-search] {
+    border: 0;
+    top: 0;
+    right: 0;
+    background-image: url(/sites/default/files/assets/img/common/icon_search.svg);
+    text-indent: -1000rem;
+    background-position: right 10px center;
+    position: absolute;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    bottom: 0
+}
+
+.search-word input[data-drupal-selector^=edit-submit-acquia-search] {
+    padding-right: 30px;
+    background-position: right 18px center;
+    border: 0;
+    height: 44px;
+    top: 2px;
+    right: 2px
+}
+
+#acquiaSearchParent {
+    position: relative
+}
+
+#acquiaSearchParent .searchremove {
+    position: absolute;
+    z-index: 1;
+    height: 14px;
+    width: 14px;
+    background: #c8c8c8;
+    color: #fff;
+    border-radius: 100%;
+    line-height: 10px;
+    letter-spacing: -1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 44px;
+    text-align: center;
+    font-style: normal;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-text-stroke: medium
+}
+
+.search-result-list.slide-list ul {
+    display: block
+}
+
+.search-result-list.slide-list ul li {
+    border-bottom: 1px solid #dee2e5;
+    padding-bottom: 60px
+}
+
+.search-result-list.slide-list ul li:last-of-type {
+    border-bottom: none
+}
+
+.search-result-list.slide-list ul li:last-of-type li {
+    border-bottom: 1px solid #dee2e5;
+    padding-bottom: 60px
+}
+
+.search-result-list.slide-list ul li:last-of-type li:last-of-type {
+    border-bottom: none
+}
+
+#block-views-block-sustainability-news-block-1 .bg-gray06 .contents-body .headline-h3 {
+    margin-top: 0;
+    padding-top: 60px
+}
+
+@media (max-width:768px) {
+    #block-views-block-sustainability-news-block-1 .bg-gray06 .contents-body .headline-h3 {
+        margin-top: 0;
+        padding-top: 40px
+    }
+}
+
+.header-lang a {
+    pointer-events: none
+}
+
+.header-lang.on a {
+    pointer-events: all
+}
+
+.header-sp-menu>div:not([class]), .header-sp-menu>div:not([class])>nav {
+    height: 100%
+}
+
+#header .header-sp-menu .header-sp-menu-search input[type=text] {
+    font-size: 1.6rem
+}
+
+#header.max-width.on {
+    max-width: 1920px
+}
+
+.top-ir-box {
+    background: #fff
+}
+
+.top-notice-links>ul>li .notice-link-box {
+    background-color: #fff
+}
+
+.ajax-progress {
+    display: none
+}
+
+input[type=password], input[type=text] {
+    width: 100%;
+    max-width: 100%
+}
+
+.text-box-wh p {
+    line-height: 1.8em
+}
+
+.panel-link-bg-col2 .panel-link-t .panel-link-bg:after, .panel-link-col2 .panel-link-t .panel-link-bg:after, .panel-link-col3 .panel-link-t .panel-link-bg:after {
+    content: unset
+}
+
+.panel-link-col1 .panel-link-t .panel-link-bg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: .3s
+}
+
+.panel-link-col1 .panel-link-t .panel-link-bg:after {
+    content: unset
+}
+
+@media (any-hover: hover) {
+    .panel-link-col1 .panel-link-t a:hover .panel-link-bg:before {
+        opacity: .1;
+        z-index: 1
+    }
+}
+
+#wrapper.browser-device-pc .panel-link-bg-col2 .panel-link-t a:hover .panel-link-body, #wrapper.browser-device-pc .panel-link-col1 .panel-link-t a:hover .panel-link-body, #wrapper.browser-device-pc .panel-link-col2 .panel-link-t a:hover .panel-link-body, #wrapper.browser-device-pc .panel-link-col3 .panel-link-t a:hover .panel-link-body {
+    opacity: 1
+}
+
+.news-pager div dl dd ul {
+    white-space: nowrap
+}
+
+.news-pager div dl dd ul li {
+    white-space: normal
+}
+
+article .ir-bonds-value-table .ir-bonds-value-calc ul li:first-of-type:after {
+    background-image: url(/sites/default/files/assets/img/ir/bonds/value/icon_eq.svg)
+}
+
+article .ir-bonds-value-table .ir-bonds-value-calc ul li:last-of-type:after {
+    background-image: url(/sites/default/files/assets/img/ir/bonds/value/icon_minus.svg)
+}
+
+@media (max-width:768px) {
+    .text-box-wh p {
+        font-size: 1.4rem
+    }
+    .image-col3-text>ul>li {
+        clear: both
+    }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_8979" data-name="長方形 8979" width="36" height="36" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="youtube_bk" transform="translate(18 18)">
+    <g id="youtube_bk-2" data-name="youtube_bk" transform="translate(-18 -18)" clip-path="url(#clip-path)">
+      <g id="_Group_" data-name="&lt;Group&gt;" transform="translate(4.38 8.4)">
+        <path id="_Path_" data-name="&lt;Path&gt;" d="M63.176,73a3.42,3.42,0,0,0-2.412-2.424C58.64,70,50.12,70,50.12,70s-8.52,0-10.644.576A3.42,3.42,0,0,0,37.064,73a38.9,38.9,0,0,0,0,13.2,3.42,3.42,0,0,0,2.412,2.424C41.6,89.2,50.12,89.2,50.12,89.2s8.52,0,10.644-.576A3.42,3.42,0,0,0,63.176,86.2a38.9,38.9,0,0,0,0-13.2Z" transform="translate(-36.5 -70)"/>
+        <path id="_Path_2" data-name="&lt;Path&gt;" d="M126.8,124.312l7.116-4.056L126.8,116.2Z" transform="translate(-115.964 -110.656)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

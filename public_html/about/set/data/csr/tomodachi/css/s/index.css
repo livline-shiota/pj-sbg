@@ -1,0 +1,1173 @@
+.corp-page-layout-note-01 {
+  text-align: left;
+  margin-top: 12px;
+}
+div.corp-page-contents-tomodachi .message + .corp-page-layout-note-01 {
+  margin-top: 22px;
+}
+.corp-page-layout-note-01_term {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.53333;
+}
+.corp-page-layout-note-01_description > *:first-child {
+  margin-top: 5px
+}
+.corp-page-list-note-01{
+  text-align: left;
+  margin-top: 16px
+}
+.corp-page-list-note-01_item{
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.53333;
+  margin-top: 12px
+}
+.corp-page-list-note-01_item:first-child {
+  margin-top: 0
+}
+.corp-page-list-note-01_marker {
+  display: table-cell;
+  min-width: 1em;
+  padding-right: 0.5em;
+}
+.corp-page-list-note-01_data {
+  display: table-cell
+}
+.corp-page-text-color-fff,
+.corp-page-text-color-fff a {
+  color: #fff;
+}
+
+div.corp-page-contents-tomodachi {
+	color: #333333;
+}
+div.corp-page-contents-tomodachi * {
+	box-sizing: border-box;
+}
+div.corp-page-contents-tomodachi h2, div.corp-page-contents-tomodachi span.corp-page-text-en {
+	font-family: 'Oswald', sans-serif;
+}
+div.corp-page-contents-tomodachi h1 span, div.corp-page-contents-tomodachi h2 span, div.corp-page-contents-tomodachi h3 span, div.corp-page-contents-tomodachi span.corp-page-text-en span {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+div.corp-page-contents-tomodachi .wrap {
+	padding: 0 20px;
+}
+div.corp-page-contents-tomodachi clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+div.corp-page-contents-tomodachi .outerlink:after {
+	content: url(/corp/set/data/csr/tomodachi/img/p/outer_link.png);
+	padding: 0 2px;
+}
+div.corp-page-contents-tomodachi .outerlink_w:after,
+div.corp-page-contents-tomodachi .corp-page-text-color-fff .outerlink:after {
+	content: url(/corp/set/data/csr/tomodachi/img/p/outer_link_w.png);
+}
+div.corp-page-contents-tomodachi .center {
+	text-align: center;
+}
+div.corp-page-contents-tomodachi .img100 {
+	width: 100%;
+}
+div.corp-page-contents-tomodachi .animated {
+	opacity: 0;
+}
+div.corp-page-contents-tomodachi .bg_gray {
+	background: url(/corp/set/data/csr/tomodachi/img/p/bg_line.png) repeat center #f7f7f7;
+	height: 300px;
+	position: absolute;
+	width: 95%;
+	z-index: -1;
+}
+div.corp-page-contents-tomodachi .btn_form, div.corp-page-contents-tomodachi .btn_border {
+	font-family: 'Noto Sans JP', sans-serif;
+	border-radius: 100px;
+	display: block;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 130%;
+	padding: 5px 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi .btn_form span, div.corp-page-contents-tomodachi .btn_border span {
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+div.corp-page-contents-tomodachi .btn_form:after, div.corp-page-contents-tomodachi .btn_border:after {
+	bottom: 0;
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: auto;
+	right: 10px;
+	top: 0;
+	position: absolute;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+div.corp-page-contents-tomodachi .btn_form {
+	background-image: -webkit-linear-gradient(45deg, #e90c1d 0%, #f7414f 100%);
+	background-image: linear-gradient(45deg, #e90c1d 0%, #f7414f 100%);
+	color: #ffffff;
+	margin: 10vw auto 6vw;
+}
+div.corp-page-contents-tomodachi .btn_form span {
+	color: #ffffff;
+}
+div.corp-page-contents-tomodachi .btn_form:after {
+	border-right: 2px solid #ffffff;
+	border-top: 2px solid #ffffff;
+}
+div.corp-page-contents-tomodachi .btn_border {
+	background: #ffffff;
+	border: 3px solid #002a83;
+	color: #002a83;
+}
+div.corp-page-contents-tomodachi .btn_border:after {
+	border-right: 2px solid #002a83;
+	border-top: 2px solid #002a83;
+}
+div.corp-page-contents-tomodachi nav {
+	font-family: 'Noto Sans JP', sans-serif;
+	height: 52px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 51px;
+	width: 100%;
+	z-index: 9999;
+}
+div.corp-page-contents-tomodachi nav .menu_header {
+	height: 52px;
+	background: #ffffff;
+	border-bottom: 1px solid #d4d3d3;
+	display: flex;
+	justify-content: flex-end;
+}
+div.corp-page-contents-tomodachi nav .menu_header img {
+	height: 52px;
+	padding: 5px 0 11px;
+}
+div.corp-page-contents-tomodachi nav .menu_header .form {
+	vertical-align: middle;
+	font-size: 13px;
+	font-size: 1.3rem;
+	background: #e70416;
+	border-radius: 20px;
+	color: #ffffff;
+	margin: 11px 16px;
+	padding: 4px 10px;
+}
+div.corp-page-contents-tomodachi nav label {
+	font-size: 10px;
+	font-size: 1.0rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #002a83;
+	font-weight: bold;
+	left: 20px;
+	bottom: 5px;
+	position: absolute;
+	text-align: center;
+	width: 30px;
+}
+div.corp-page-contents-tomodachi nav label:after {
+	content: "MENU";
+}
+div.corp-page-contents-tomodachi nav label span, div.corp-page-contents-tomodachi nav label span:before, div.corp-page-contents-tomodachi nav label span:after {
+	background: #002a83;
+	content: '';
+	display: block;
+	height: 3px;
+	position: absolute;
+	transition: all 0.5s;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi nav label span {
+	top: -16px;
+}
+div.corp-page-contents-tomodachi nav label span:before {
+	top: 8px;
+}
+div.corp-page-contents-tomodachi nav label span:after {
+	top: 16px;
+}
+div.corp-page-contents-tomodachi nav .menu_inner {
+	background: #ffffff;
+	transition: all 0.5s;
+	width: 100%;
+	z-index: 9999;
+}
+div.corp-page-contents-tomodachi nav .menu_inner li {
+	border-bottom: 1px solid #d9d9d9;
+	padding: 30px 0;
+	font-weight: bold;
+}
+div.corp-page-contents-tomodachi nav .menu_inner li:last-of-type {
+	border: none;
+}
+div.corp-page-contents-tomodachi nav .menu_inner li span {
+	display: inline-block;
+	width: 80px;
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off {
+	display: none;
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off ~ ul {
+	height: 0;
+	overflow: hidden;
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off:checked ~ ul {
+	height: 320px;
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off:checked ~ ul:after {
+	background: rgba(0, 0, 0, 0.4);
+	content: "";
+	display: block;
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: -1;
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off:checked + label:after {
+	content: "CLOSE";
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off:checked + label span {
+	transform: translateY(10px) rotate(-30deg);
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off:checked + label span:before {
+	opacity: 0;
+}
+div.corp-page-contents-tomodachi nav input[type="checkbox"].on-off:checked + label span:after {
+	transform: translateY(-16px) rotate(60deg);
+}
+div.corp-page-contents-tomodachi main {
+	align-items: center;
+	display: block;
+	height: 95vw !important;
+	justify-content: center;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi main .vegas-wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+div.corp-page-contents-tomodachi main h1 {
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #ffffff;
+	font-size: 35px;
+	font-size: 3.5rem;
+	font-weight: 600;
+	line-height: 120%;
+  padding: 0 16px;
+}
+div.corp-page-contents-tomodachi main h1 > span {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 10vw;
+	display: block;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 140%;
+	margin: 10px -8px 0;
+	padding: 5px 10px;
+	color: #333333;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi .list_image {
+	height: 28vw;
+	margin: 10vw auto 0;
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi .list_image ul {
+	display: inline;
+	float: left;
+	height: 28vw;
+	overflow: hidden;
+}
+div.corp-page-contents-tomodachi .list_image ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+div.corp-page-contents-tomodachi .list_image ul li {
+	display: inline;
+	float: left;
+	width: 25vw;
+}
+div.corp-page-contents-tomodachi .list_image ul li img {
+	display: block;
+	height: 25vw;
+	width: auto;
+}
+div.corp-page-contents-tomodachi .list_image ul li:nth-of-type(2n) img {
+	margin-top: 3vw;
+}
+div.corp-page-contents-tomodachi #lead {
+	padding: 13vw 0 26vw;
+	position: relative;
+}
+div.corp-page-contents-tomodachi #lead section {
+	padding: 0 20px 0;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+}
+div.corp-page-contents-tomodachi #lead section h2 {
+	font-family: 'Noto Sans JP', sans-serif;
+	background: linear-gradient(transparent 90%, #c9e4f7 90%) 0 11vw;
+	display: inline;
+	font-size: 8vmin;
+	font-weight: bold;
+	line-height: 135%;
+	text-align: center;
+	letter-spacing: 0.06em;
+}
+div.corp-page-contents-tomodachi #lead .lead_bg {
+  margin: 6vw -20px;
+}
+div.corp-page-contents-tomodachi #lead .lead_bg img {
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #lead section p {
+	text-align: left;
+}
+div.corp-page-contents-tomodachi #about {
+	padding-bottom: 250px;
+	position: relative;
+}
+div.corp-page-contents-tomodachi #about h2 {
+	color: #ffffff;
+	font-size: 13vmin;
+	font-weight: 600;
+	margin-top: -120px;
+	padding-top: 120px;
+	text-align: center;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #about h2 span {
+	color: #ffffff;
+	font-size: 25%;
+	font-weight: normal;
+}
+div.corp-page-contents-tomodachi #about h3 {
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi #about h3 span.nato-jp {
+	color: #e70214;
+	font-size: 40%;
+	font-weight: normal;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi {
+	background: #6aa3d8;
+	position: relative;
+	z-index: 0;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .about_bg {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .about_bg img {
+	top: calc(100vh - 100vw + 40px);
+	position: -webkit-sticky;
+	position: sticky;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi > section {
+	padding: 60px 20px 70vw;
+	position: relative;
+	z-index: 2;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .lead_about p {
+	color: #ffffff;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi h3 {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 5vmin;
+	line-height: 130%;
+	padding: 8vw 0 10px;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi h3 span {
+	color: #ffffff;
+	font-size: 100%;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .img_about {
+	padding: 9vw 0 10vw;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .message {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 10px 15px;
+	position: relative;
+	width: calc(100% - 10px);
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .message h4 {
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #002a83;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 130%;
+	padding: 15px;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .message p {
+	margin-top: 15px;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .message p:last-of-type {
+	text-align: right;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .message img {
+	padding: 0 15px;
+}
+div.corp-page-contents-tomodachi #about .about_tomodachi .message:before {
+	background: rgba(222, 226, 235, 0.7);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	z-index: -1;
+}
+div.corp-page-contents-tomodachi #about .require_detail h3 {
+	color: #002a83;
+	font-family: 'Oswald', sans-serif;
+	font-size: 9vmin;
+	padding: 13vw 0 3vw;
+	line-height: 60%;
+}
+div.corp-page-contents-tomodachi #about .require_detail h3 span{
+	color: #e70214;
+	font-weight: normal;
+	font-size: 40%;
+}
+div.corp-page-contents-tomodachi #about .require_detail > section {
+	background: url(/corp/set/data/csr/tomodachi/img/s/bg_require.jpg) no-repeat top 0 right 0;
+	background-size: contain;
+	margin-bottom: 16vw;
+	padding-top: 40vw;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+}
+div.corp-page-contents-tomodachi #about .require_detail > section div {
+	background: #ffffff;
+	position: relative;
+	padding: 15px 20px;
+	width: calc(100% - 30px);
+}
+div.corp-page-contents-tomodachi #about .require_detail > section div:before {
+	background: #dee2eb;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 30px;
+	position: absolute;
+	top: 10px;
+	width: calc(100% - 20px);
+	z-index: -1;
+}
+div.corp-page-contents-tomodachi #about .require_detail > section div h4 {
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #e70214;
+	font-size: 5vmin;
+	font-weight: bold;
+	line-height: 130%;
+	margin-bottom: 10px;
+}
+div.corp-page-contents-tomodachi #about .require_detail > section div h4 span {
+	color: #e70214;
+}
+div.corp-page-contents-tomodachi #about .require_detail .require_list {
+	margin-bottom: 30px;
+}
+div.corp-page-contents-tomodachi #about .require_detail .require_list dt, div.corp-page-contents-tomodachi #about .require_detail .require_list dd {
+	padding: 15px;
+}
+div.corp-page-contents-tomodachi #about .require_detail .require_list dt {
+	font-family: 'Noto Sans JP', sans-serif;
+  background: #f7f7f7;
+	border-top: 1px solid #d9d9d9;
+	color: #002a83;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #about .require_detail .require_list dd {
+	border-top: 1px solid #d9d9d9;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #about .require_detail .require_list dd a {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+div.corp-page-contents-tomodachi #about .require_detail h5 {
+	font-family: 'Noto Sans JP', sans-serif;
+  color: #e70214;
+	font-size: 19px;
+	font-size: 1.9rem;
+	font-weight: bold;
+	line-height: 130%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list {
+	border: 5px solid #dee2eb;
+	margin-bottom: 5vw;
+	padding: 2px;
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list h6 {
+	font-family: 'Noto Sans JP', sans-serif;
+  align-items: center;
+	color: #002a83;
+	display: flex;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 130%;
+	margin-bottom: 10px;
+	padding: 13px 13px 0;
+	vertical-align: middle;
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list h6:before {
+	display: block;
+	font-size: 8vmin;
+	font-weight: bold;
+	line-height: 130%;
+	margin-right: 15px;
+	font-family: 'Oswald', sans-serif;
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list:first-of-type h6:before {
+	content: "01";
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list:nth-of-type(2) h6:before {
+	content: "02";
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list:nth-of-type(3) h6:before {
+	content: "03";
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list:nth-of-type(4) h6:before {
+	content: "04";
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list:nth-of-type(5) h6:before {
+	content: "05";
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list ul {
+	padding: 0 13px;
+	margin-bottom: 10px;
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list ul li {
+	position: relative;
+	padding-left: 1em;
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list ul li:before {
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0.5em;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #333;
+}
+div.corp-page-contents-tomodachi #about .require_detail .program_list img {
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #about .require_detail .date_program {
+	color: #006699;
+	display: block;
+}
+div.corp-page-contents-tomodachi #voice {
+	padding-bottom: 30vw;
+	position: relative;
+}
+div.corp-page-contents-tomodachi #voice h2 {
+	background: #e9eef2;
+	color: #002a83;
+	font-size: 13vmin;
+	font-weight: bold;
+	height: 50vh;
+	line-height: 78vw;
+	margin-top: -120px;
+	padding-top: 120px;
+	text-align: center;
+	width: 100%;
+	z-index: 9;
+}
+div.corp-page-contents-tomodachi #voice h2 span {
+	color: #e70214;
+	font-size: 25%;
+	font-weight: normal;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg {
+	background: #e9eef2;
+	position: relative;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner_first {
+	margin-top: 50vh;
+	position: relative
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_bg02 {
+	display: block;
+	height: calc(100vh - 100px);
+	overflow: hidden;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 100px;
+	width: 100vw;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_bg02 img {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_bg02 img.voice_bg_inner {
+	opacity: 0;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner {
+	padding: 68px 10px;
+	position: relative;
+	margin-top: 40vh;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner h3 {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 6vmin;
+	font-weight: 600;
+	line-height: 130%;
+	margin-bottom: 4vw;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner p span {
+	font-size: 80%;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .voice_elm, div.corp-page-contents-tomodachi #voice .voice_bg .inviewfadeInImage {
+	width: calc(100vw - 60px);
+}
+
+div.corp-page-contents-tomodachi #voice .voice_bg .inviewfadeInImage {
+	position: absolute;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .inviewfadeInImage {
+	height:300vh;
+	top: 60vh;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .voice_elm02, div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .voice_elm03 {
+	margin-top: 64px;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner p.voice_profile {
+	font-size: 1.2em;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner p.voice_profile span {
+	font-size: 80%;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .inviewfadeInImage {
+	display: block;
+	height: 300vh;
+	z-index: -1;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dt, div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dd {
+	display: flex;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dt p, div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dd p {
+	display: block;
+	width: calc(100% - 10vw);
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dt p:first-of-type, div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dd p:first-of-type {
+	float: left;
+	font-family: 'Oswald', sans-serif;
+	font-size: 6vmin;
+	font-weight: 600;
+	margin-top: 5px;
+	width: 10vmin;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dt {
+	font-weight: 600;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dt p:first-of-type {
+	color: #002a83;
+}
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dd p:first-of-type {
+	color: #e70214;
+}
+div.corp-page-contents-tomodachi #voice .wrap {
+	background: #ffffff;
+	margin-top: 35px;
+	position: relative;
+}
+div.corp-page-contents-tomodachi #voice .btn_border {
+	width: 80vmin;
+	background: #ffffff;
+	border: 2px solid #002a83;
+	padding: 3vw;
+	margin: 3vw auto 0;
+	z-index: 1;
+}
+div.corp-page-contents-tomodachi #action {
+	position: relative;
+}
+div.corp-page-contents-tomodachi #action .bg_gray {
+	right: 0;
+	top: 120px;
+}
+div.corp-page-contents-tomodachi #action h2 {
+	color: #002a83;
+	font-size: 13vmin;
+	font-weight: bold;
+	line-height: 30%;
+	margin-top: -120px;
+	padding-top: 120px;
+	text-align: right;
+}
+div.corp-page-contents-tomodachi #action h2 span {
+	color: #e70214;
+	font-weight: normal;
+	font-size: 25%;
+}
+div.corp-page-contents-tomodachi #action .action_inner {
+	background: url(/corp/set/data/csr/tomodachi/img/s/bg_activity.jpg) top center no-repeat;
+	background-size: contain;
+	padding-top: 60vw;
+}
+div.corp-page-contents-tomodachi #action .action_inner p {
+	background: #ffffff;
+	padding: 10px 15px;
+	display: inline-block;
+}
+div.corp-page-contents-tomodachi #action h3 {
+	color: #e70214;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 5vmin;
+	font-weight: bold;
+	line-height: 130%;
+	margin: 20vw 0 4vw;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi #action .area_twitter_inner {
+	width: 325px;
+	max-width: 100%;
+	margin: 0 auto;
+	border: 1px solid rgba(15,70,100,.12);
+}
+div.corp-page-contents-tomodachi #action .btn_story {
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 20px auto 30px;
+}
+div.corp-page-contents-tomodachi #action .btn_story a {
+	align-items: flex-start;
+	background: #ffffff;
+	border: 1px solid #d9d9d9;
+	color: #000000;
+	display: flex;
+	margin-bottom: 15px;
+	position: relative;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #action .btn_story a:after {
+	border-right: 2px solid #d9d9d9;
+	border-top: 2px solid #d9d9d9;
+	bottom: 0;
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	right: 10px;
+	margin: auto;
+	top: 0;
+	position: absolute;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+div.corp-page-contents-tomodachi #action .btn_story a h4 {
+	left: 50%;
+	position: absolute;
+	text-align: left;
+	top: 50%;
+	transform: translateY(-50%);
+}
+div.corp-page-contents-tomodachi #action .btn_story a img {
+	width: 45%;
+}
+div.corp-page-contents-tomodachi #action .btn_border {
+	width: 80vmin;
+	background: #ffffff;
+	border: 2px solid #002a83;
+	padding: 3vw 5vw;
+	margin: 3vw auto 9vw;
+}
+
+div.corp-page-contents-tomodachi #support {
+	position: relative;
+	padding-bottom: 10vw;
+}
+div.corp-page-contents-tomodachi #support .bg_gray {
+	left: 0;
+	top: 120px;
+}
+div.corp-page-contents-tomodachi #support h2 {
+	color: #002a83;
+	font-size: 13vmin;
+	font-weight: bold;
+	line-height: 30%;
+	padding-top: 120px;
+}
+div.corp-page-contents-tomodachi #support h2 span {
+	color: #e70214;
+	font-size: 25%;
+	font-weight: normal;
+}
+div.corp-page-contents-tomodachi #support .support_inner {
+	background: url(/corp/set/data/csr/tomodachi/img/s/bg_support.jpg) top center no-repeat;
+	background-size: contain;
+	margin-bottom: 10vw;
+	padding-top: 60vw;
+}
+div.corp-page-contents-tomodachi #support .support_inner p:first-of-type {
+	background: #ffffff;
+	padding: 10px 15px;
+	display: inline-block;
+}
+
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 40vw 0 0;
+  margin-bottom: 10vw;
+  position: relative;
+  z-index: 0;
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap.fellow-work-ship {
+	background-image: url(/corp/set/data/csr/tomodachi/img/s/pic-support-fellow-work-ship.jpg);
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap.tour-de-tohoku {
+	background-image: url(/corp/set/data/csr/tomodachi/img/s/pic-support-fellow-tour-de-tohoku.jpg);
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap .corp-page-support-article_title {
+  background: #ffffff;
+  position: relative;
+  width: calc(100% - 30px);
+  padding: 15px;
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap .corp-page-support-article_title::before {
+  background: #dee2eb;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  width: calc(100% - 20px);
+  z-index: -1;
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap:nth-child(odd) .corp-page-support-article_title {
+  margin: 0 0 0 auto;
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap:nth-child(odd) .corp-page-support-article_title::before {
+  right: 30px;
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap:nth-child(even) .corp-page-support-article_title::before {
+	left: 30px;
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .wrap .corp-page-support-article_title h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: left;
+  color: #e70214;
+  font-size: 5vmin;
+  font-weight: bold;
+  line-height: 130%;
+  padding: 0;
+  margin-bottom: 10px;
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .corp-page-support-article_item_sub {
+  margin: 9.7vw 4.8vw 0;
+  padding-top: 48vw;
+  background-repeat: no-repeat;
+  background-size: 85% auto;
+  background-position: center top;
+}
+div.corp-page-contents-tomodachi #support .corp-page-support-article .wrap.fellow-work-ship .corp-page-support-article_item_sub {
+	background-image: url(/corp/set/data/csr/tomodachi/img/s/pic-support-fellow-work-ship-efforts.jpg);
+}
+div.corp-page-contents-tomodachi .corp-page-support-article .corp-page-support-article_item_sub h4 {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: left;
+  font-weight: bold;
+  line-height: 130%;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #333333 !important;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+
+
+
+/*div.corp-page-contents-tomodachi #support .corp-page-support-article_title {
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 10vw;
+	position: relative;
+	z-index: 0;
+}
+div.corp-page-contents-tomodachi #support .corp-page-support-article_title {
+	padding-top: 40vw;
+}
+div.corp-page-contents-tomodachi #support .corp-page-support-article_title div {
+	background: #ffffff;
+	padding: 10px;
+	position: relative;
+	width: calc(100% - 30px);
+}
+div.corp-page-contents-tomodachi #support .corp-page-support-article_title div:before {
+	background: #dee2eb;
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 10px;
+	width: calc(100% - 20px);
+	z-index: -1;
+}
+div.corp-page-contents-tomodachi #support .corp-page-support-article_title_other div {
+	background: #ffffff;
+	padding: 10px;
+	position: relative;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi #support .corp-page-support-article_title_other div:before {
+	background: #ffffff;
+	width: 100%;
+}*/
+
+
+/*div.corp-page-contents-tomodachi #support section:nth-of-type(2) {
+    background-image: url(/corp/set/data/csr/tomodachi/img/s/image_support01.jpg);
+    background-size: contain;
+}
+div.corp-page-contents-tomodachi #support section.elm_support {
+    padding-top: 40vw;
+}
+
+
+
+
+
+div.corp-page-contents-tomodachi #support section:nth-of-type(2) {
+	background-image: url(/corp/set/data/csr/tomodachi/img/s/image_support01.jpg);
+	background-size: contain;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(2) div {
+	margin: 0 0 0 auto;
+	padding: 15px;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(2) div::before {
+	right: 30px;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(3) {
+	background-image: url(/corp/set/data/csr/tomodachi/img/s/image_support03.jpg);
+	background-size: contain;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(3) div {
+	margin: 0 0 0 auto;
+	padding: 15px 15px 0 15px;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(3) div::before {
+	right: 0;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(4) {
+	background-image: url(/corp/set/data/csr/tomodachi/img/s/image_support02.jpg);
+	background-size: contain;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(4) div {
+	padding: 15px;
+}
+div.corp-page-contents-tomodachi #support section:nth-of-type(4) div:before {
+	left: 30px;
+}
+div.corp-page-contents-tomodachi #support .corp-page-support-article_title h3 {
+	font-family: 'Noto Sans JP', sans-serif;
+	text-align: left;
+	color: #e70214;
+	font-size: 5vmin;
+	font-weight: bold;
+	line-height: 130%;
+	padding: 0;
+	margin-bottom: 10px;
+}
+div.corp-page-contents-tomodachi #support .wrap_other h3 {
+	color: #333333 !important;
+	font-size: 14px !important;
+}*/
+div.corp-page-contents-tomodachi .library h2 {
+	color: #002a83;
+	font-size: 9vmin;
+	font-weight: bold;
+	line-height: 0.7em;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi .library h2 span {
+	color: #e70214;
+	font-weight: normal;
+	font-size: 40%;
+}
+div.corp-page-contents-tomodachi .library .list_library {
+	margin: 20px auto 40px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+div.corp-page-contents-tomodachi .library .list_library ul li {
+	background: #ffffff;
+	flex-shrink: 0;
+}
+div.corp-page-contents-tomodachi .library .list_library ul a {
+	display: block;
+	height: 100%;
+	position: relative;
+}
+div.corp-page-contents-tomodachi .library .list_library ul a:hover {
+	opacity: 1;
+}
+div.corp-page-contents-tomodachi .library .list_library ul a:hover:before {
+	opacity: 1;
+}
+
+div.corp-page-contents-tomodachi #topics {
+	background: #f7f7f7;
+	padding: 10vw 0 5vw;
+}
+div.corp-page-contents-tomodachi #topics h3 {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: bold;
+	font-size: 5vmin;
+	line-height: 130%;
+	margin-top: 20px;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi #topics .list_topics li {
+	border: 1px solid #d9d9d9;
+	height: 210px;
+	margin: 0 10px;
+	position: relative;
+	width: 210px;
+}
+div.corp-page-contents-tomodachi #topics .list_topics li:after {
+	border-right: 2px solid #d9d9d9;
+	border-top: 2px solid #d9d9d9;
+	bottom: 40px;
+	content: "";
+	display: inline-block;
+	height: 7px;
+	margin-left: 15px;
+	position: absolute;
+	right: 10px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 7px;
+}
+div.corp-page-contents-tomodachi #topics .list_topics li p {
+	color: #000000;
+	padding: 0 10px 10px;
+}
+div.corp-page-contents-tomodachi #topics .list_topics li p:first-of-type {
+	font-weight: bold;
+	padding-bottom: 0;
+}
+div.corp-page-contents-tomodachi #topics .list_topics li .area_image {
+	align-items: center;
+	display: flex;
+	height: 115px;
+	overflow: hidden;
+	width: 208px;
+}
+div.corp-page-contents-tomodachi #topics .list_topics li .area_image img {
+	width: 100%;
+}
+
+div.corp-page-contents-tomodachi #movie {
+	padding-top: 10vw;
+}
+div.corp-page-contents-tomodachi #movie .list_movie li {
+	margin: 0 20px;
+	width: calc(100vw - 40px);
+}
+div.corp-page-contents-tomodachi #movie .list_movie ul ol.flickity-page-dots .dot {
+	background: #d9d9d9;
+	border-radius: 0;
+	cursor: pointer;
+	display: inline-block;
+	height: 4px;
+	margin: 0 8px;
+	opacity: 1;
+	width: 24px;
+}
+div.corp-page-contents-tomodachi #movie .list_movie ul ol.flickity-page-dots .dot.is-selected {
+	background: #002a83;
+}
+div.corp-page-contents-tomodachi #movie .list_movie li .thum_movie {
+	margin-bottom: 40px;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+div.corp-page-contents-tomodachi #movie .list_movie li .thum_movie iframe {
+	border:none;
+	height: 80%;
+	left: 10%;
+	position: absolute;
+	top: 0;
+	width: 80%;
+}
+div.corp-page-contents-tomodachi #movie h3 {
+	color: #002a83;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: bold;
+	line-height: 120%;
+	margin-top: -10%;
+	text-align: center;
+}
+div.corp-page-contents-tomodachi #movie h3 span {
+	color: #002a83;
+}
+.corp-page-text-sup-01 {
+	vertical-align: top;
+	top: 0.1em;
+	position: relative;
+	font-size: 10px;
+	font-size: 1rem;
+	line-height: 1;
+}
+
+div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .voice_elm01 h3 br:first-of-type {
+	display: block;
+}
+@media (orientation: landscape){
+	div.corp-page-contents-tomodachi #voice h2 {
+		line-height: 1.2em;
+	}
+	div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .voice_elm03 {
+		margin-top: 20px;
+	}
+	div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dt p, div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .faq dd p {
+		width: calc(100% - 5vw);
+	}
+	div.corp-page-contents-tomodachi #voice .voice_bg .voice_inner .voice_elm01 h3 br:first-of-type {
+		display: none;
+	}
+}

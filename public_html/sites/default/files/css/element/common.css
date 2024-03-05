@@ -1,0 +1,115 @@
+@charset "UTF-8";
+section {
+  padding: 0 0 200px;
+}
+
+section .element-title {
+  color: #237CD5;
+  background-color: #DEE2E5;
+  padding: 20px;
+  font-family: "FrutigerNeueLTW1G-Medium", "FP-ヒラギノUD角ゴ StdN W5";
+  margin: 100px auto 20px;
+  max-width: 960px;
+  width: 100%;
+}
+
+section .element-title > span {
+  color: #D11908;
+}
+
+section .element-title > p {
+  float: right;
+  color: #333333;
+}
+
+section .element-title.distable {
+  background-color: #B7BBBE;
+}
+
+section .element-title.distable + div {
+  position: relative;
+}
+
+section .element-title.distable + div:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.6;
+}
+
+section .element-text {
+  color: #D11908;
+  padding: 0 20px;
+  font-family: "FrutigerNeueLTW1G-Medium", "FP-ヒラギノUD角ゴ StdN W5";
+  margin: 20px auto;
+  max-width: 960px;
+  width: 100%;
+  line-height: 1.8em;
+}
+
+.line {
+  margin-bottom: 30px;
+}
+
+.tab-window {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.badge-green, .badge-blue, .badge-red, .badge-yellow {
+  margin-left: 5px;
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #444;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.badge-red {
+  background: -webkit-gradient(linear, left top, left bottom, from(deeppink), to(mediumvioletred));
+  background: -webkit-linear-gradient(top, deeppink, mediumvioletred);
+  background: linear-gradient(to bottom, deeppink, mediumvioletred);
+}
+
+.badge-blue {
+  background: -webkit-gradient(linear, left top, left bottom, from(lightskyblue), to(royalblue));
+  background: -webkit-linear-gradient(top, lightskyblue, royalblue);
+  background: linear-gradient(to bottom, lightskyblue, royalblue);
+}
+
+.badge-green {
+  background: -webkit-gradient(linear, left top, left bottom, from(mediumaquamarine), to(seagreen));
+  background: -webkit-linear-gradient(top, mediumaquamarine, seagreen);
+  background: linear-gradient(to bottom, mediumaquamarine, seagreen);
+}
+
+.badge-yellow {
+  background: -webkit-gradient(linear, left top, left bottom, from(gold), to(darkorange));
+  background: -webkit-linear-gradient(top, gold, darkorange);
+  background: linear-gradient(to bottom, gold, darkorange);
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 0 0 160px;
+  }
+  section .element-title {
+    margin: 80px 0 20px;
+  }
+  section .element-title > p {
+    margin-top: 10px;
+    float: none;
+    text-align: right;
+  }
+}

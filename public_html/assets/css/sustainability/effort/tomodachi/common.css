@@ -1,0 +1,380 @@
+@charset "UTF-8";
+.click-mask {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#header,
+#footer {
+  /*
+    html5doctor.com Reset Stylesheet
+    v1.6.1
+    Last Updated: 2010-09-17
+    Author: Richard Clark - http://richclarkdesign.com
+    Twitter: @rich_clark
+    */
+  /* change colours to suit your needs */
+  /* change colours to suit your needs */
+  /* change border colour to suit your needs */
+  font-size: 100%;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+#header html, #header body, #header div, #header span, #header object, #header iframe,
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header p, #header blockquote, #header pre,
+#header abbr, #header address, #header cite, #header code,
+#header del, #header dfn, #header em, #header img, #header ins, #header kbd, #header q, #header samp,
+#header small, #header strong, #header var,
+#header b, #header i,
+#header dl, #header dt, #header dd, #header ol, #header ul, #header li,
+#header fieldset, #header form, #header label, #header legend,
+#header table, #header caption, #header tbody, #header tfoot, #header thead, #header tr, #header th, #header td,
+#header article, #header aside, #header canvas, #header details, #header figcaption, #header figure,
+#header footer, #header header, #header hgroup, #header menu, #header nav, #header section, #header summary,
+#header time, #header mark, #header audio, #header video,
+#footer html,
+#footer body,
+#footer div,
+#footer span,
+#footer object,
+#footer iframe,
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6,
+#footer p,
+#footer blockquote,
+#footer pre,
+#footer abbr,
+#footer address,
+#footer cite,
+#footer code,
+#footer del,
+#footer dfn,
+#footer em,
+#footer img,
+#footer ins,
+#footer kbd,
+#footer q,
+#footer samp,
+#footer small,
+#footer strong,
+#footer var,
+#footer b,
+#footer i,
+#footer dl,
+#footer dt,
+#footer dd,
+#footer ol,
+#footer ul,
+#footer li,
+#footer fieldset,
+#footer form,
+#footer label,
+#footer legend,
+#footer table,
+#footer caption,
+#footer tbody,
+#footer tfoot,
+#footer thead,
+#footer tr,
+#footer th,
+#footer td,
+#footer article,
+#footer aside,
+#footer canvas,
+#footer details,
+#footer figcaption,
+#footer figure,
+#footer footer,
+#footer header,
+#footer hgroup,
+#footer menu,
+#footer nav,
+#footer section,
+#footer summary,
+#footer time,
+#footer mark,
+#footer audio,
+#footer video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#header body,
+#footer body {
+  line-height: 1;
+}
+
+#header article, #header aside, #header details, #header figcaption, #header figure,
+#header footer, #header header, #header hgroup, #header menu, #header nav, #header section,
+#footer article,
+#footer aside,
+#footer details,
+#footer figcaption,
+#footer figure,
+#footer footer,
+#footer header,
+#footer hgroup,
+#footer menu,
+#footer nav,
+#footer section {
+  display: block;
+}
+
+#header nav ul,
+#footer nav ul {
+  list-style: none;
+}
+
+#header blockquote, #header q,
+#footer blockquote,
+#footer q {
+  quotes: none;
+}
+
+#header blockquote:before, #header blockquote:after,
+#header q:before, #header q:after,
+#footer blockquote:before,
+#footer blockquote:after,
+#footer q:before,
+#footer q:after {
+  content: '';
+  content: none;
+}
+
+#header a,
+#footer a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#header ins,
+#footer ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+#header mark,
+#footer mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#header del,
+#footer del {
+  text-decoration: line-through;
+}
+
+#header abbr[title], #header dfn[title],
+#footer abbr[title],
+#footer dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+#header table,
+#footer table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#header hr,
+#footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#header input, #header select,
+#footer input,
+#footer select {
+  vertical-align: middle;
+}
+
+#header li,
+#footer li {
+  list-style: none;
+}
+
+#header img,
+#footer img {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+#header *,
+#footer * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "FrutigerNeueLTW1G-Book", "FP-ヒラギノUD角ゴ StdN W3";
+}
+
+#header input[type="text"],
+#header input[type="search"],
+#header textarea,
+#footer input[type="text"],
+#footer input[type="search"],
+#footer textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+  outline: none;
+  color: #333333;
+  background-color: #fff;
+}
+
+#header a,
+#footer a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  text-decoration: none !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#header a:hover,
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#header a:active,
+#footer a:active {
+  text-decoration: none;
+}
+
+#header a.press,
+#footer a.press {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+#header i,
+#footer i {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 10px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#header i.icon-blank,
+#footer i.icon-blank {
+  background-image: url(/assets/img/common/icon_blank.svg);
+}
+
+#header i.icon-blank-wh,
+#footer i.icon-blank-wh {
+  background-image: url(/assets/img/common/icon_blank_wh.svg);
+}
+
+#header i.icon-arrow-down-wh,
+#footer i.icon-arrow-down-wh {
+  top: 1px;
+  background-image: url(/assets/img/common/arrow_down_wh.svg);
+}
+
+#header i.icon-pdf,
+#footer i.icon-pdf {
+  background-image: url(/assets/img/common/icon_pdf.svg);
+  width: 1.25em;
+  height: 1.25em;
+  top: 3px;
+  margin-left: 10px;
+}
+
+#header i.icon-rss,
+#footer i.icon-rss {
+  background-image: url(/assets/img/common/icon_rss.svg);
+}
+
+#header i.icon-anchor,
+#footer i.icon-anchor {
+  background-image: url(/assets/img/common/arrow_down.svg);
+}
+
+#header .cf:after,
+#footer .cf:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#header .accordion,
+#footer .accordion {
+  position: relative;
+}
+
+#header .accordion .accordion-head,
+#footer .accordion .accordion-head {
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#header .accordion .accordion-body,
+#footer .accordion .accordion-body {
+  display: none;
+  position: relative;
+}
+
+#header .accordion.accordion-none .accordion-head,
+#footer .accordion.accordion-none .accordion-head {
+  cursor: default;
+}
+
+#header .accordion.accordion-none .accordion-body,
+#footer .accordion.accordion-none .accordion-body {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  #header input[type="text"],
+  #header input[type="search"],
+  #header textarea,
+  #footer input[type="text"],
+  #footer input[type="search"],
+  #footer textarea {
+    font-size: 100%;
+  }
+  #header i,
+  #footer i {
+    margin-left: 5px;
+  }
+}

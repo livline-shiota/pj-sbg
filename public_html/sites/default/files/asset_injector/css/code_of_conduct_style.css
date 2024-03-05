@@ -1,0 +1,2491 @@
+@charset "utf-8";
+
+/*==================================================================
+ヘッダーフッターCookie同意
+==================================================================*/
+
+#header *,#footer * {
+	font-family: inherit;
+}
+
+#cookie-attention .cookie-attention-container > div > div:last-of-type > button {
+  font-size: 1.5rem !important;
+}
+
+#cookie-attention .cookie-attention-container > div > div:first-of-type > p > a {
+	text-decoration: underline;
+}
+
+#cookie-attention .cookie-attention-container > div > div:first-of-type > p > a:hover {
+	text-decoration: none;
+}
+
+/*==================================================================
+* 2401追加分
+==================================================================*/
+@media screen and (min-width: 600px) {
+  #code_of_conduct.top .cont p {
+    font-size: initial;
+  }
+
+  #code_of_conduct .heading {
+    font-size: 3.0rem;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li>a:focus::after {
+    height: calc(100% + 0px);
+    top: 0px;
+  }
+
+  #code_of_conduct .title {
+    font-size: 2.8rem;
+  }
+
+  #code_of_conduct .statementSection .statement h2 {
+    font-size: 2.0rem;
+  }
+
+  #code_of_conduct .statementSection .statement .text,
+  #code_of_conduct .statementSection .statement .paragraph,
+  #code_of_conduct .statementSection .statement .list,
+  #code_of_conduct .statementSection .statement .bold {
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .statementSection .statement .help dt {
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd {
+    font-size: 1.4rem;
+  }
+
+  #code_of_conduct .hoWtoSection h2 {
+    font-size: 1.8rem;
+  }
+
+  #code_of_conduct .hoWtoSection .text {
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual h3 {
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dt {
+    width: 3em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dt,
+  #code_of_conduct .hoWtoSection .manual .manual-example dd {
+    font-size: 1.3rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .item:first-child .manual-example dd {
+    font-size: 1.3rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help dt,
+  #code_of_conduct .hoWtoSection .manual .help dd,
+  #code_of_conduct .hoWtoSection .manual .help p,
+  #code_of_conduct .hoWtoSection .manual .help.model dt {
+    font-size: 1.3rem !important;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li:nth-child(2) {
+    font-size: 1.6rem !important;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li:nth-child(6) {
+    font-size: 1.1rem !important;
+  }
+
+  #cookie-attention .cookie-attention-container>div>div:last-of-type>button {
+    font-size: 1.5rem !important;
+  }
+  
+  #code_of_conduct .indexSection .indexList > li > a {
+  	font-size: 1.3rem !important;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #code_of_conduct .cont p {
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dt {
+    width: 3em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.model dt {
+    font-size: 1.3rem !important;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dt,
+  #code_of_conduct .hoWtoSection .manual .manual-example dd {
+    font-size: 1.3rem !important;
+  }
+
+  #code_of_conduct .gcoSection .cont .image .caption {
+    font-size: 1.4rem !important;
+  }
+
+  #cookie-attention .cookie-attention-container>div>div:last-of-type>button {
+    font-size: 1.3rem !important;
+  }
+
+  #header .header-sp-menu {
+    font-size: 1.5rem !important;
+  }
+  #code_of_conduct .hoWtoSection .manual .help dt,
+  #code_of_conduct .hoWtoSection .manual .help dd,
+  #code_of_conduct .hoWtoSection .manual .help p{
+    font-size:1.3rem !important;
+  }
+}
+
+/*==================================================================
+* 共通
+==================================================================*/
+/* font */
+@import url("//fonts.googleapis.com/css?family=Roboto:400,500");
+
+#code_of_conduct {
+  font-size: 1.6rem;
+}
+
+a:focus {
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+button:focus {
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+/*==================================================================
+*
+* SP
+*
+==================================================================*/
+@media screen and (max-width: 599px) {
+
+  /* common */
+  body {
+    position: relative;
+    padding-bottom: 35px;
+  }
+
+  #nav-top-area {
+    bottom: 55px;
+  }
+
+  #code_of_conduct {
+    color: #333;
+    margin: 0 auto;
+    letter-spacing: .05em;
+  }
+
+  #code_of_conduct.en {
+    letter-spacing: 0;
+  }
+
+  #code_of_conduct img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* For Chrome */
+  }
+
+  #code_of_conduct a {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+
+  #code_of_conduct .fadein {
+    opacity: 0;
+    transition: ease-out 500ms;
+    transform: translate(0, 20px);
+  }
+
+  #code_of_conduct .fadein.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  #code_of_conduct .inner {
+    min-width: 320px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .cfx::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #code_of_conduct .hidden-sp {
+    display: none;
+  }
+
+  #code_of_conduct .section {
+    margin: 0 auto;
+    padding-bottom: 58px;
+    border-top: 1px solid #dcdddd;
+  }
+
+  #code_of_conduct .lang a {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 103px;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    border: 1px solid #dcdddd;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  #code_of_conduct #localNavSection+.section {
+    border-top: 0;
+  }
+
+  #code_of_conduct .heading {
+    margin: 58px 0 30px;
+    font-size: 171.428571%;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  #code_of_conduct .heading::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #111;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #code_of_conduct .cont {
+    position: relative;
+  }
+
+  #code_of_conduct .cont p {
+    line-height: 1.7;
+    margin-top: 1.8em;
+  }
+
+  #code_of_conduct .cont p.caption-right {
+    margin-top: .8em;
+    text-align: right;
+    font-size: 75%;
+    line-height: 1.33;
+  }
+
+  #code_of_conduct .cont p.caption-right .name {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .cont .image {
+    margin-top: 1.8em;
+  }
+
+  /* localNavSection */
+  #code_of_conduct #localNavSection {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  #code_of_conduct #localNavSection a {
+    color: #333;
+  }
+
+  #code_of_conduct #localNavSection a:hover,
+  #code_of_conduct #localNavSection a.active {
+    text-decoration: none;
+  }
+
+  #code_of_conduct .contentHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    overflow: hidden;
+    border-bottom: 1px solid #dcdddd;
+  }
+
+  #code_of_conduct .contentHeader .logo {
+    margin: 0;
+  }
+
+  #code_of_conduct .contentHeader .logo>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    padding: 0 8px;
+    letter-spacing: -.06em;
+    align-items: center;
+  }
+
+  #code_of_conduct .contentHeader .logo>a img {
+    width: 100%;
+    height: auto;
+  }
+
+  #code_of_conduct .contentHeader .logo .text {
+    margin-top: 0;
+    color: #333;
+    font-size: 11px;
+  }
+
+  #code_of_conduct .contentHeader .logo .character {
+    display: inline-block;
+    width: 42px;
+    height: 62px;
+    margin-top: -2px;
+  }
+
+  #code_of_conduct #localNavSection .toggle {
+    position: relative;
+    background: #efefef;
+    text-align: center;
+    font-size: 92.857143%;
+    cursor: pointer;
+    z-index: 5000;
+    height: 46px;
+    line-height: 46px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct #localNavSection .toggle::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #111;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+
+  #code_of_conduct #localNavSection .localNav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    padding: 0 26px;
+    background: #fff;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 500ms;
+    -webkit-transform: translateY(100vh);
+    transform: translateY(100vh);
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+    z-index: 1000;
+    opacity: 0;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  #code_of_conduct #localNavSection .localNav .topLink {
+    display: none;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    padding: 13px 10px 5px;
+    border-bottom: 1px solid #111;
+    letter-spacing: -.07em;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li:first-child>a {
+    padding: 18px 0;
+  }
+
+  /* #code_of_conduct #localNavSection .localNav li a:hover {
+  opacity: .4;
+} */
+  #code_of_conduct #localNavSection .localNav li .character {
+    display: inline-block;
+    width: 42px;
+    height: 47px;
+    padding-right: 10px;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li>.menu {
+    display: none;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li>ul li a {
+    display: block;
+    padding: 0 10px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li>a .text {
+    margin: 0;
+  }
+
+  #code_of_conduct #localNavSection .localNav li:hover>ul>li {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    background: #fff;
+    border-color: #333;
+  }
+
+  #code_of_conduct #localNavSection .localNav li:hover>ul>li a {
+    padding: 8px 10px;
+  }
+
+  #code_of_conduct #localNavSection.open .localNav {
+    max-height: 100vh;
+    overflow: auto;
+    padding: 40px 26px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity: 1;
+  }
+
+  #code_of_conduct #localNavSection.open .toggle::before {
+    border-top: 10px solid #111;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 0;
+  }
+
+  body.fixed {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  #overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1;
+  }
+
+  /*=====================================================
+ トップ
+=====================================================*/
+  /* mvSection */
+  #code_of_conduct .mvSection .inner {
+    position: relative;
+    height: 121vw;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #code_of_conduct .mvSection .title {
+    position: absolute;
+    left: 36vw;
+    top: calc(50% - 4vw);
+    font-size: 4vw;
+    font-weight: bold;
+    letter-spacing: .05em;
+  }
+
+  #code_of_conduct.en .mvSection .title {
+    left: 35vw;
+    top: calc(50% - 3vw);
+    font-size: 3.8vw;
+    letter-spacing: 0;
+  }
+
+  #code_of_conduct .mvSection .copy {
+    position: absolute;
+    top: calc(50% - 66vw);
+    left: -4.5vw;
+    width: 83vw;
+    height: 125vw;
+  }
+
+  #code_of_conduct.en .mvSection .copy-en {
+    width: 30vw;
+    position: absolute;
+    top: calc(50% - 42vw);
+    left: 2vw;
+  }
+
+  /* ceoSection */
+  #code_of_conduct .ceoSection .header {
+    position: relative;
+  }
+
+  #code_of_conduct .ceoSection .text {
+    position: absolute;
+    margin: 0;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  #code_of_conduct .ceoSection .header .text h2 {
+    color: #fff;
+    margin-bottom: -.7em;
+    /* font-size: 210%; */
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  }
+
+  #code_of_conduct.en .ceoSection .header .text h2 {
+    font-size: 2.4rem;
+  }
+
+  #code_of_conduct .ceoSection .header .text h2 img {
+    width: 276px;
+  }
+
+  #code_of_conduct .ceoSection .caption {
+    color: #fff;
+    text-align: right;
+    font-size: 13px !important;
+  }
+
+  #code_of_conduct .ceoSection .cont {
+    padding-top: 48px;
+  }
+
+  /* gcoSection */
+  #code_of_conduct .gcoSection .image {
+    max-width: 199px;
+    margin: 0 auto;
+  }
+
+  #code_of_conduct .gcoSection .caption {
+    font-size: 71.428571%;
+    letter-spacing: 0;
+    text-align: right;
+  }
+
+  #code_of_conduct .caption .name {
+    font-weight: bold;
+  }
+
+  /* indexSection */
+  #code_of_conduct .indexSection .indexList>li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #111;
+    line-height: 1.5;
+  }
+
+  #code_of_conduct .indexSection .indexList:last-child>li:last-child {
+    margin-bottom: 0;
+  }
+
+  #code_of_conduct .indexSection ul li a {
+    display: block;
+    padding: 12px 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    padding: 5px 0;
+    min-height: 64px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct.en .indexSection .indexList>li>a {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 4px);
+    border-top: 7px solid #111;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>a.open::before {
+    border-top: 0;
+    border-bottom: 7px solid #111;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>ul {
+    display: none;
+  }
+
+  #code_of_conduct .indexSection .indexList:first-of-type>li>ul {
+    display: block;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>ul>li {
+    font-size: 85.714286%;
+    border-top: 1px solid #111;
+    letter-spacing: 0;
+
+    background-image: url(/assets/img/common/arrow_next.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>ul>li>a {
+    padding-left: 20px;
+  }
+
+  /* #code_of_conduct .indexSection ul li a:hover {
+  opacity: .4;
+} */
+  #code_of_conduct .indexSection ul li .character {
+    display: inline-block;
+    text-align: center;
+    width: 44px;
+    height: 50px;
+    padding-right: 5px;
+  }
+
+  /* modelSection */
+  #code_of_conduct .modelSection .image {
+    margin-top: 1.8em;
+  }
+
+  /*=====================================================
+ 2階層目
+=====================================================*/
+  /* titleSection */
+  #code_of_conduct .titleSection {
+    position: relative;
+    border-bottom: 1px solid #dcdddd;
+  }
+
+  #code_of_conduct .titleSection .inner {
+    padding: 128px 0 68px;
+  }
+
+  #code_of_conduct .titleSection::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 44px);
+    bottom: -1px;
+    width: 88px;
+    height: 1px;
+    background: #111;
+  }
+
+  #code_of_conduct .titleSection .inner {
+    position: relative;
+  }
+
+  #code_of_conduct .title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+
+  /* coverSection */
+  #code_of_conduct .coverSection .inner {
+    position: relative;
+    height: 0px;
+    padding-top: calc(57.6% + 60px);
+    overflow: visible;
+    border-bottom: 1px solid #dcdddd;
+  }
+
+  #code_of_conduct .coverSection .symbol {
+    position: absolute;
+    margin: 0;
+  }
+
+  #code_of_conduct.integrity .coverSection .symbol {
+    left: -1.5%;
+    top: calc(4% + 60px);
+    width: 57.2%;
+  }
+
+  #code_of_conduct.trust .coverSection .symbol {
+    width: 48%;
+    right: -3px;
+    bottom: -10px;
+  }
+
+  #code_of_conduct.protection .coverSection .symbol {
+    width: 51.47%;
+    left: -8px;
+    bottom: -10px;
+  }
+
+  #code_of_conduct.respect .coverSection .symbol {
+    width: 49.47%;
+    right: 6px;
+    top: 63px;
+  }
+
+  #code_of_conduct.fairness .coverSection .symbol {
+    width: 58.135%;
+    left: -10px;
+    bottom: 3px;
+  }
+
+  #code_of_conduct .coverSection .symbol img {
+    width: 100%;
+    height: auto;
+  }
+
+  #code_of_conduct .coverSection .catch {
+    position: absolute;
+  }
+
+  #code_of_conduct.integrity .coverSection .catch {
+    left: 54%;
+    top: calc(33% + 60px);
+    width: 28.948%;
+  }
+
+  #code_of_conduct.trust .coverSection .catch {
+    right: 50%;
+    top: calc(33% + 60px);
+    width: 16.316%;
+  }
+
+  #code_of_conduct.protection .coverSection .catch {
+    left: 54%;
+    top: calc(33% + 60px);
+    width: 34.935%;
+  }
+
+  #code_of_conduct.respect .coverSection .catch {
+    right: 44%;
+    top: calc(33% + 60px);
+    width: 27.07%;
+  }
+
+  #code_of_conduct.fairness .coverSection .catch {
+    left: 45%;
+    top: calc(33% + 60px);
+    width: 27.87%;
+  }
+
+  #code_of_conduct .coverSection .textBlock {
+    min-width: 320px;
+    padding: 30px 20px 0;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .coverSection .textBlock .title {
+    margin-bottom: .8em;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.3;
+  }
+
+  #code_of_conduct .coverSection .textBlock .description {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  /* statementSection */
+  #code_of_conduct .statementSection {
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebedf0;
+  }
+
+  #code_of_conduct .statementSection .statement {
+    margin-top: 60px;
+  }
+
+  #code_of_conduct .statementSection .statement h2 {
+    padding: 42px 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    line-height: 1.5;
+  }
+
+  #code_of_conduct.en .statementSection .statement h2 {
+    font-size: 2rem;
+  }
+
+  #code_of_conduct .statementSection .statement .cont {
+    padding: 0 20px;
+  }
+
+  #code_of_conduct .statementSection .statement .text,
+  #code_of_conduct .statementSection .statement .list,
+  #code_of_conduct .statementSection .statement .bold {
+    margin-top: 2em;
+    line-height: 1.7;
+  }
+
+  #code_of_conduct .statementSection .statement .text {
+    border-left: 4px solid #111;
+    padding-left: 1.2em;
+  }
+
+  #code_of_conduct .statementSection .statement .list {
+    margin-left: 1em;
+  }
+
+  #code_of_conduct .statementSection .statement .bold {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .statementSection .statement .bold+.list {
+    margin-top: 0;
+  }
+
+  #code_of_conduct .statementSection .statement .list li {
+    text-indent: -1.5em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example ul.list li {
+    text-indent: -1.5em !important;
+  }
+
+  #code_of_conduct .statementSection .statement .list li::before,
+  #code_of_conduct .manual-example .list li:before {
+    content: "■ ";
+  }
+
+  #code_of_conduct .statementSection .statement .help {
+    margin-top: 2em;
+    position: relative;
+    padding: 20px;
+    border: 2px solid #D11908;
+  }
+
+  #code_of_conduct .statementSection .statement .help+.help {
+    margin-top: 20px;
+  }
+
+  #code_of_conduct .statementSection .statement .help dt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 0 0 10px 55px;
+    margin-bottom: .5em;
+    color: #D11908;
+    border-bottom: 2px solid #D11908;
+    font-size: 1.3rem;
+    font-weight: bold;
+    min-height: 50px;
+  }
+
+  #code_of_conduct.en .statementSection .statement .help dt {
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .statementSection .statement .help dt::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 100%;
+  }
+
+  #code_of_conduct .statementSection .statement .help.signal dt::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_danger-signal.svg);
+    background-size: 30px 34px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.attention dt::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_attention.svg);
+    background-size: 48px 42px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.example dt::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_example.svg);
+    background-size: 32px 49px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.faq dt::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_faq.svg);
+    background-size: 33px 50px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.definition dt::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_definition.svg);
+    background-size: 34px 34px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.model dt::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_model.svg);
+    background-size: 36px 36px;
+  }
+
+  #code_of_conduct .statementSection .statement .help dt br {
+    display: none;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd+dt {
+    margin-top: 20px;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd {
+    font-size: 1.4rem;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd p {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd p+ul,
+  #code_of_conduct .statementSection .statement .help dd ul+p {
+    margin-top: .5em;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd li {
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd li::before {
+    content: "・ ";
+  }
+
+  /* hoWtoSection */
+  #code_of_conduct .hoWtoSection {
+    margin: 20px 20px 0;
+    padding: 35px 25px 25px;
+    background: #f2f5f8;
+    max-width: 950px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .hoWtoSection::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #code_of_conduct .hoWtoSection h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  #code_of_conduct .hoWtoSection .text {
+    font-size: 1.3rem;
+    margin-top: 2em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual {
+    padding-bottom: 1px;
+    border-left: 1px solid #111;
+    padding-top: 20px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual:first-of-type {
+    margin-top: 2em;
+    padding-top: 0;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .item+.item {
+    margin-top: 40px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual h3 {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-left: 42px;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual h3 {
+    font-size: 112.5%;
+    line-height: 1
+  }
+
+  #code_of_conduct .hoWtoSection .manual h3::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #111;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    padding-left: 15px;
+    margin: 30px 0 20px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dt,
+  #code_of_conduct .hoWtoSection .manual .manual-example dd {
+    font-size: 1.1rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dt {
+    width: 3em;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .manual-example dt {
+    display: none;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dd {
+    width: calc(100% - 3em)
+  }
+
+  #code_of_conduct .hoWtoSection .manual .item:first-child .manual-example dd {
+    font-size: 1.6rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example ul {
+    margin-left: 1em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .helpList {
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin: 20px 0 0;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 38px;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.signal::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_danger-signal.svg);
+    background-size: 29px 34px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.attention::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_attention.svg);
+    background-size: 36px 33px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.example::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_example.svg);
+    background-size: 26px 37px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.faq::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_faq.svg);
+    background-size: 26px 38px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.definition::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_definition.svg);
+    background-size: 34px 34px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.model::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_model.svg);
+    background-size: 36px 36px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help dt {
+    width: 100%;
+    margin-bottom: .2em;
+    font-weight: bold;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .help dt {
+    font-weight: normal;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .help dt span {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.model dt {
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.model dt span {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help dd {
+    font-size: 1.2rem;
+  }
+
+  /*=====================================================
+ はじめに
+=====================================================*/
+  #code_of_conduct.introduction .statementSection .statement:first-child {
+    margin-top: 30px;
+  }
+}
+
+
+/*==================================================================
+*
+* PC
+*
+==================================================================*/
+@media screen and (min-width: 600px) {
+
+  /* common */
+  body {
+    position: relative;
+  }
+
+  #code_of_conduct {
+    padding-top: 75px;
+    color: #333;
+    margin: 0 auto;
+    letter-spacing: .05em;
+  }
+
+  #code_of_conduct.en {
+    letter-spacing: 0;
+  }
+
+  #code_of_conduct img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* For Chrome */
+  }
+
+  #code_of_conduct a {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+
+  #code_of_conduct .fadein {
+    opacity: 0;
+    transition: ease-out 500ms;
+    transform: translate(0, 20px);
+  }
+
+  #code_of_conduct .fadein.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  #code_of_conduct .inner {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .cfx::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #code_of_conduct .hidden-pc {
+    display: none;
+  }
+
+  #code_of_conduct .section {
+    border-top: 1px solid #dcdddd;
+    padding-bottom: 100px;
+  }
+
+  #code_of_conduct #localNavSection+.section {
+    border-top: 0;
+  }
+
+  #code_of_conduct .heading {
+    margin-bottom: 2.6em;
+    font-size: 162.5%;
+    font-weight: bold;
+    letter-spacing: .05em;
+  }
+
+  #code_of_conduct .cont {
+    position: relative;
+  }
+
+  #code_of_conduct.top .cont p {
+    font-size: 1.6rem;
+    letter-spacing: .05em;
+    line-height: 1.7;
+    margin-top: 1.8em;
+  }
+
+  #code_of_conduct.top {
+    padding-top: 0;
+  }
+
+  /* localNavSection */
+  #code_of_conduct #localNavSection {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  #code_of_conduct #localNavSection .toggle {
+    display: none;
+  }
+
+  #code_of_conduct .contentHeader .logo {
+    display: none;
+  }
+
+  #code_of_conduct #localNavSection a {
+    color: #333;
+  }
+
+  #code_of_conduct #localNavSection a:hover,
+  #code_of_conduct #localNavSection a.active {
+    text-decoration: none;
+  }
+
+  #code_of_conduct #localNavSection .localNav {
+    position: relative;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 166px;
+    border-top: 1px solid #e0dfdf;
+    padding: 20px 0
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li {
+    width: 16.55%;
+    border-right: 1px solid #ddd;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li:last-child {
+    border-right: 0;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li.topLink {
+    display: none;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 4px;
+    font-size: 93.75%;
+    font-weight: bold;
+    letter-spacing: -.06em;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    text-align: center;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li.topLink>a {
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  #code_of_conduct #localNavSection .localNav li a:hover {
+    text-decoration: underline;
+  }
+
+  #code_of_conduct #localNavSection .localNav li a:hover .character {
+    scale: 1.1;
+  }
+
+  #code_of_conduct #localNavSection .localNav>ul>li>a span {
+    width: 100%;
+  }
+
+  #code_of_conduct #localNavSection .localNav li .character {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    padding-right: 4px;
+    transition: 0.3s;
+  }
+
+  #code_of_conduct #localNavSection:not(.fixed) .localNav>ul>li:nth-child(3) .character {
+    width: 81px;
+    height: 93px;
+  }
+
+  #code_of_conduct #localNavSection:not(.fixed) .localNav>ul>li:nth-child(4) .character {
+    width: 67px;
+    height: 93px;
+  }
+
+  #code_of_conduct #localNavSection:not(.fixed) .localNav>ul>li:nth-child(5) .character {
+    width: 79px;
+    height: 93px;
+  }
+
+  #code_of_conduct #localNavSection:not(.fixed) .localNav>ul>li:nth-child(6) .character {
+    width: 76px;
+    height: 93px;
+  }
+
+  #code_of_conduct #localNavSection:not(.fixed) .localNav>ul>li:nth-child(7) .character {
+    width: 87px;
+    height: 93px;
+  }
+
+  #code_of_conduct #localNavSection:not(.fixed) .localNav li>a .character img {
+    width: 100%;
+    height: auto;
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: opacity .8s;
+    -o-transition: opacity .8s;
+    transition: opacity .8s;
+    font-weight: normal;
+    border-bottom: 1px solid transparent;
+    border: 1px solid #ebedf0;
+    background: #fff;
+    /*display: none;*/
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu dt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 200%;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu dt span {
+    margin: 0 auto;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li:nth-child(2) .menu dt {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu dd {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    width: calc(100% - 200px);
+    flex-basis: calc(100% - 200px);
+    border-left: 1px solid #e6e8eb;
+    padding: 15px 0 15px 45px;
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu dd ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu dd ul li {
+    font-size: 1.2rem;
+    width: 50%;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu dd ul li a {
+    display: block;
+    padding: 10px 0;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    outline: none;
+  }
+
+  #code_of_conduct #localNavSection .localNav .menu dd ul li a:hover {
+    /*color: #ccc;*/
+  }
+
+  #code_of_conduct #localNavSection .localNav li .text {
+    display: block;
+    text-align: left;
+    width: auto;
+    margin: 5px auto;
+    line-height: 1.5;
+  }
+
+  #code_of_conduct #localNavSection.fixed {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    max-width: none;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 1px solid #ebedf0;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav {
+    max-width: 950px;
+    margin: 0 auto;
+    border: 0;
+    padding: 10px 20px 0;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul {
+    height: 84px;
+    padding: 0;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li {
+    width: calc(11.25% - 10px);
+    border: 0;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li.topLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 31.5%;
+    font-size: 62.5%;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav li.topLink .character,
+  #code_of_conduct #localNavSection.fixed .localNav li.topLink .text {
+    margin: 0;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav li .character {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li>a {
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li.topLink>a {
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li>a .character {
+    margin: 0;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav li.topLink .character {
+    width: 39px;
+    height: 59px;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li:nth-child(n+2)>a .text {
+    display: none;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li:not(.topLink)>a {
+    position: relative;
+    bottom: -1px;
+    text-align: left;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #003000;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li:not(.topLink)>a,
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li:not(.topLink)>a img {
+    opacity: .7;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li:not(.topLink)>a.active {
+    border-bottom-width: 2px;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li>a:hover,
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li>a.active,
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li>a:hover img,
+  #code_of_conduct #localNavSection.fixed .localNav>ul>li>a.active img {
+    opacity: 1;
+  }
+
+  #code_of_conduct #localNavSection.fixed .localNav li:has(a:focus)>.menu,
+  #code_of_conduct #localNavSection.fixed .localNav li:hover>.menu {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding: 25px 0;
+  }
+
+  /*=====================================================
+ トップ
+=====================================================*/
+  /* mvSection */
+  #code_of_conduct .mvSection .inner {
+    position: relative;
+    max-width: 950px;
+    min-width: 840px;
+    height: 546px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  #code_of_conduct .mvSection .lang,
+  #code_of_conduct .coverSection .lang,
+  #code_of_conduct .titleSection .lang {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin: 0;
+    font-size: 68.75%;
+    line-height: 1;
+    text-align: right;
+    letter-spacing: 0;
+    z-index: 10;
+  }
+
+  #code_of_conduct .heading {
+    margin: 100px 0 60px;
+    font-size: 3.0rem !important;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  #code_of_conduct .heading::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #111;
+    margin-top: 20px;
+  }
+
+  #code_of_conduct .heading.is-center {
+    text-align: center;
+  }
+
+  #code_of_conduct .heading.is-center::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #code_of_conduct .mvSection .lang a:link {
+    color: #006699;
+    text-decoration: none;
+  }
+
+  #code_of_conduct .mvSection .lang a:visited {
+    color: purple;
+    text-decoration: none;
+  }
+
+  #code_of_conduct .mvSection .lang a:hover,
+  #code_of_conduct .mvSection .lang a:active,
+  #code_of_conduct .mvSection .lang a:focus {
+    color: #006699;
+    text-decoration: underline;
+  }
+
+  #code_of_conduct .mvSection .title {
+    position: absolute;
+    top: calc(50% - .5em);
+    ;
+    left: calc(50% - 100px);
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+
+  #code_of_conduct.en .mvSection .title {
+    font-size: 125%;
+    top: 50%;
+    left: 50%;
+  }
+
+  #code_of_conduct .mvSection .copy {
+    position: absolute;
+    top: -27px;
+    left: calc(50% - 430px);
+    width: 379px;
+    height: 578px;
+  }
+
+  #code_of_conduct.en .mvSection .copy {
+    left: calc(50% - 330px);
+  }
+
+  #code_of_conduct .mvSection .copy-en {
+    position: absolute;
+    left: calc(50% - 358px);
+    top: 70px;
+    width: 180px;
+    height: 45px;
+  }
+
+  /* ceoSection */
+  #code_of_conduct .ceoSection .header {
+    position: relative;
+  }
+
+  #code_of_conduct .ceoSection .header .text {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    text-align: right;
+    color: #fff;
+  }
+
+  #code_of_conduct.en .ceoSection .header .text {
+    left: 38%;
+    padding-right: 20px;
+    top: 12%;
+    width: auto;
+    transform: translateX(0);
+  }
+
+  #code_of_conduct .ceoSection .header .text h2 {
+    font-size: 4.7rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  #code_of_conduct.en .ceoSection .header .text h2 {
+    font-size: 4.4rem !important;
+  }
+
+  #code_of_conduct .ceoSection .header .text h2 img {
+    width: 484px;
+  }
+
+  #code_of_conduct .ceoSection .caption {
+    font-size: 1.5rem;
+  }
+
+  #code_of_conduct .caption .name {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .ceoSection .cont {
+    padding: 50px 0 100px;
+  }
+
+  /* gcoSection */
+  #code_of_conduct .gcoSection .cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  #code_of_conduct .gcoSection .cont .text {
+    width: 60.92%;
+    margin-right: 7.3%;
+    margin-top: 0;
+  }
+
+  #code_of_conduct .gcoSection .cont .text p:first-child {
+    margin-top: 0;
+  }
+
+  #code_of_conduct .gcoSection .cont .image {
+    width: 31.78%;
+  }
+
+  #code_of_conduct .gcoSection .cont .image .caption {
+    font-size: 1.4rem !important;
+    text-align: right;
+  }
+
+  /* indexSection */
+  #code_of_conduct .indexSection {
+    border-top: 1px solid #dcdddd;
+  }
+
+  #code_of_conduct .indexSection .inner {
+    margin: 0 auto;
+  }
+
+  #code_of_conduct .indexSection .inner::after,
+  #code_of_conduct .indexSection .indexList:first-of-type::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #code_of_conduct .indexSection .indexList {
+    width: 29.47%;
+    float: left;
+    margin-right: 5.795%;
+  }
+
+  #code_of_conduct .indexSection .indexList:first-of-type {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #code_of_conduct .indexSection .indexList:first-of-type>li {
+    margin-top: 0;
+  }
+
+  #code_of_conduct .indexSection .indexList:first-of-type li ul li {
+    width: 29.47%;
+    float: left;
+    margin-right: 5.795%;
+  }
+
+  #code_of_conduct .indexSection .indexList:first-of-type li ul li:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  #code_of_conduct .indexSection .indexList:last-child {
+    margin-right: 0;
+  }
+
+  #code_of_conduct .indexSection .indexList>li {
+    margin-top: 30px;
+  }
+
+  #code_of_conduct .indexSection .indexList li a {
+    display: block;
+    padding: 12px 0 12px 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  #code_of_conduct .indexSection .indexList li a:hover {
+    text-decoration: underline;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>a {
+    padding: 12px 0;
+    border-bottom: 1px solid #111;
+    font-weight: bold;
+    /* font-size: 93.75%; */
+  }
+
+  #code_of_conduct .indexSection .indexList:nth-of-type(4)>li:nth-of-type(1)>a {
+    font-size: 80%;
+    letter-spacing: 0;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>ul {
+    line-height: 1.5;
+    /* font-size: 93.75%; */
+    font-weight: bold;
+  }
+
+  #code_of_conduct .indexSection .indexList>li>ul>li {
+    font-size: 1.2rem !important;
+    font-weight: normal;
+    border-bottom: 1px solid #111;
+  }
+
+  #code_of_conduct.en .indexSection .indexList>li>ul>li {
+    font-size: 1.6rem;
+  }
+
+  #code_of_conduct .indexSection .indexList li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  #code_of_conduct .indexSection .indexList li .character {
+    width: 44px;
+    height: 44px;
+    padding-right: 5px;
+  }
+
+  /* modelSection */
+  #code_of_conduct .modelSection .cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  #code_of_conduct .modelSection .cont .text {
+    width: 34.1%;
+  }
+
+  #code_of_conduct .modelSection .cont .text p:first-child {
+    margin-top: 0;
+  }
+
+  #code_of_conduct .modelSection .cont .image {
+    width: 62.115%;
+    margin-left: 3.8%;
+    margin-top: 0;
+  }
+
+  /*=====================================================
+ 2階層目
+=====================================================*/
+  /* titleSection */
+  #code_of_conduct .titleSection {
+    position: relative;
+    border-bottom: 1px solid #dcdddd;
+  }
+
+  #code_of_conduct .titleSection::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 44px);
+    bottom: -1px;
+    width: 88px;
+    height: 1px;
+    background: #111;
+  }
+
+  #code_of_conduct .titleSection .inner {
+    position: relative;
+    max-width: 950px;
+    padding: 82px 0;
+  }
+
+  #code_of_conduct .title {
+    text-align: center;
+    font-size: 225%;
+    font-weight: bold;
+  }
+
+  /* coverSection */
+  #code_of_conduct .coverSection {
+    position: relative;
+    border-bottom: 1px solid #dcdddd;
+  }
+
+  #code_of_conduct .coverSection .inner {
+    position: relative;
+    max-width: 950px;
+    min-width: 840px;
+    height: 488px;
+    overflow: visible;
+  }
+
+  #code_of_conduct .coverSection .symbol img {
+    width: 100%;
+    height: auto;
+  }
+
+  #code_of_conduct .coverSection .symbol {
+    position: absolute;
+  }
+
+  #code_of_conduct.integrity .coverSection .symbol {
+    width: 52.1%;
+    left: -10px;
+  }
+
+  #code_of_conduct.trust .coverSection .symbol {
+    width: 43.685%;
+    right: -8px;
+    bottom: -20px;
+  }
+
+  #code_of_conduct.protection .coverSection .symbol {
+    width: 46.738%;
+    left: -22px;
+  }
+
+  #code_of_conduct.respect .coverSection .symbol {
+    width: 44.632%;
+    right: 10px;
+    bottom: -50px;
+  }
+
+  #code_of_conduct.fairness .coverSection .symbol {
+    width: 52.948%;
+    left: -24px;
+    bottom: 10px;
+  }
+
+  #code_of_conduct .coverSection .catch {
+    position: absolute;
+  }
+
+  #code_of_conduct.integrity .coverSection .catch {
+    left: 52%;
+    top: 30%;
+    width: 28.948%;
+  }
+
+  #code_of_conduct.trust .coverSection .catch {
+    right: 44%;
+    top: 38%;
+    width: 16.316%;
+  }
+
+  #code_of_conduct.protection .coverSection .catch {
+    left: 52%;
+    top: 30%;
+    width: 28.948%;
+  }
+
+  #code_of_conduct.respect .coverSection .catch {
+    right: 44%;
+    top: 38%;
+    width: 25.79%;
+  }
+
+  #code_of_conduct.fairness .coverSection .catch {
+    left: 39%;
+    top: 30%;
+    width: 26.632%;
+  }
+
+  #code_of_conduct .coverSection .textBlock {
+    position: absolute;
+  }
+
+  #code_of_conduct.integrity .coverSection .textBlock {
+    left: 52%;
+    top: 56%;
+    right: 20px;
+  }
+
+  #code_of_conduct.trust .coverSection .textBlock {
+    right: 55%;
+    bottom: 10%;
+    margin-left: 20px;
+  }
+
+  #code_of_conduct.trust.en .coverSection .textBlock {
+    right: 61%;
+  }
+
+  #code_of_conduct.protection .coverSection .textBlock {
+    left: 52%;
+    top: 56%;
+    right: 20px;
+  }
+
+  #code_of_conduct.respect .coverSection .textBlock {
+    right: 49%;
+    bottom: 10%;
+    margin-left: 20px;
+  }
+
+  #code_of_conduct.respect.en .coverSection .textBlock {
+    right: 51%;
+  }
+
+  #code_of_conduct.fairness .coverSection .textBlock {
+    left: 51.8%;
+    top: 56%;
+    right: 20px;
+  }
+
+  #code_of_conduct.fairness.en .coverSection .textBlock {
+    left: 55%;
+  }
+
+  #code_of_conduct .coverSection .textBlock .title {
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.3;
+  }
+
+  #code_of_conduct .coverSection .textBlock .description {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+
+  /* statementSection */
+  #code_of_conduct .statementSection {
+    padding: 80px 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebedf0;
+  }
+
+  #code_of_conduct .statementSection .statement {
+    max-width: 990px;
+    margin: 0 auto 120px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .statementSection .statement h2 {
+    padding: 60px 20px;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #111;
+  }
+
+  #code_of_conduct .statementSection .statement .text,
+  #code_of_conduct .statementSection .statement .paragraph,
+  #code_of_conduct .statementSection .statement .list,
+  #code_of_conduct .statementSection .statement .bold {
+    margin-top: 2.8em;
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+
+  #code_of_conduct.en .statementSection .statement .text,
+  #code_of_conduct.en .statementSection .statement .paragraph,
+  #code_of_conduct.en .statementSection .statement .list,
+  #code_of_conduct.en .statementSection .statement .bold {
+    font-size: 93.75%;
+  }
+
+  #code_of_conduct .statementSection .statement .text {
+    border-left: 4px solid #111;
+    padding-left: 1.2em;
+  }
+
+  #code_of_conduct .statementSection .statement .bold {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .statementSection .statement .bold+.list {
+    margin-top: 0;
+  }
+
+  #code_of_conduct .statementSection .statement .list {
+    margin-left: 1.5em;
+  }
+
+  #code_of_conduct .statementSection .statement .list li,
+  #code_of_conduct .hoWtoSection .manual .manual-example ul.list li {
+    text-indent: -1.5em;
+  }
+
+  #code_of_conduct .statementSection .statement .list li::before,
+  #code_of_conduct .manual-example .list li:before {
+    content: "■ ";
+  }
+
+  #code_of_conduct.en .statementSection .statement .list {
+    margin-left: 1em;
+  }
+
+  #code_of_conduct.en .statementSection .statement .list li {
+    text-indent: -1em;
+  }
+
+  #code_of_conduct .statementSection .statement .help {
+    margin-right: 17%;
+    margin-top: 2.8em;
+    position: relative;
+    padding: 25px 20px 20px 68px;
+    /* background: #faeeec; */
+    border: 2px solid #D11908;
+  }
+
+  #code_of_conduct .statementSection .statement .help+.help {
+    margin-top: 25px;
+  }
+
+  #code_of_conduct .statementSection .statement .help::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 38px
+  }
+
+  #code_of_conduct .statementSection .statement .help.signal::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_danger-signal.svg);
+    background-size: 30px 34px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.attention::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_attention.svg);
+    background-size: 36px 33px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.example::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_example.svg);
+    background-size: 26px 37px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.faq::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_faq.svg);
+    background-size: 26px 38px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.definition::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_definition.svg);
+    background-size: 34px 34px;
+  }
+
+  #code_of_conduct .statementSection .statement .help.model::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_model.svg);
+    background-size: 36px 36px;
+  }
+
+  #code_of_conduct .statementSection .statement .help::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #code_of_conduct .statementSection .statement .help dt {
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    color: #D11908;
+    border-bottom: 2px solid #D11908;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  #code_of_conduct.en .statementSection .statement .help dt {
+    font-size: 93.75%;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd+dt {
+    margin-top: 30px;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #code_of_conduct .statementSection .statement .help dd .column {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding-right: 20px;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd li {
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+  }
+
+  #code_of_conduct .statementSection .statement .help dd li::before {
+    content: "・ ";
+  }
+
+  #code_of_conduct.en .statementSection .statement .help dd li {
+    text-indent: -1em;
+    margin-left: 1em;
+  }
+
+  /* hoWtoSection */
+  #code_of_conduct .hoWtoSection {
+    margin: 80px auto;
+    padding: 70px;
+    background: #f2f5f8;
+    max-width: 950px;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .hoWtoSection::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  #code_of_conduct .hoWtoSection h2 {
+    margin-bottom: 40px;
+    font-size: 137.5%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #code_of_conduct .hoWtoSection .text {
+    font-size: 1.5rem;
+    margin-top: 2em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual {
+    margin-top: 3em;
+    border-left: 1px solid #111;
+    float: left;
+    width: 40%;
+  }
+
+  #code_of_conduct .hoWtoSection .manual:nth-of-type(2) {
+    float: right;
+    width: 57%;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .item+.item {
+    margin-top: 40px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual h3 {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-left: 42px;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual h3 {
+    font-size: 112.5%;
+    line-height: 1;
+  }
+
+  #code_of_conduct .hoWtoSection .manual h3::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 8px);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #111;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    padding-left: 15px;
+    margin: 30px 0 20px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dt {
+    width: 3em;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .manual-example dt {
+    display: none;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example dd {
+    width: calc(100% - 3em)
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .item:nth-child(2) .manual-example dd {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example ul {
+    margin-left: 1.5em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .manual-example ul li {
+    text-indent: -1.5em;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .manual-example ul {
+    margin-left: 1em;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .manual-example ul li {
+    text-indent: -1em;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .helpList {
+    padding-left: 15px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin: 30px 0 0;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 38px;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.signal::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_danger-signal.svg);
+    background-size: 30px 34px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.attention::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_attention.svg);
+    background-size: 36px 33px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.example::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_example.svg);
+    background-size: 26px 37px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.faq::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_faq.svg);
+    background-size: 26px 38px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.definition::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_definition.svg);
+    background-size: 34px 34px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.model::before {
+    background-image: url(/system/files/images/about/compliance/code_of_conduct/icon_model.svg);
+    background-size: 36px 36px;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help dt {
+    width: 100%;
+    margin-bottom: .2em;
+    font-weight: bold;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .help dt {
+    font-weight: bold;
+  }
+
+  #code_of_conduct.en .hoWtoSection .manual .help dt span {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.model dt {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help.model dt span {
+    font-weight: bold;
+  }
+
+  #code_of_conduct .hoWtoSection .manual .help dd {
+    font-size: 1.2rem;
+  }
+}

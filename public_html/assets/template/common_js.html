@@ -1,0 +1,35 @@
+<script>
+    var Drupal = {
+        debounce: null,
+        behaviors: {}
+    };
+
+    var drupalSettings = null;
+</script>
+
+<script src="/sites/default/files/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?iM9LmWWwO8s%3D&box=HQ7CTFnMFDQ%3D&aa=1&ab=2" charset="utf-8"></script>
+
+<script src="/sites/default/files/plugin/jquery.once.js"></script>
+<script src="/sites/default/files/plugin/jquery.cookie.js"></script>
+<script src="/sites/default/files/plugin/jquery.easing.js"></script>
+<script src="/sites/default/files/plugin/jquery.transit.min.js"></script>
+<script src="/sites/default/files/plugin/jquery.matchHeight.js"></script>
+<script src="/sites/default/files/js/common/browser.js"></script>
+<script src="/sites/default/files/js/contact/main.js"></script>
+<script src="/sites/default/files/js/ir/finance/highlight/main.js"></script>
+<script src="/sites/default/files/js/ir/shareholder/meeting/main.js"></script>
+<script src="/sites/default/files/js/news/common.js"></script>
+<script src="/sites/default/files/js/search/main.js"></script>
+<script src="/sites/default/files/js/sustainability/effort/tomodachi/p/main.js"></script>
+<script src="/sites/default/files/js/theme.js"></script>
+<script src="/sites/default/files/plugin/swiper/swiper-bundle.min.js"></script>
+<script src="/sites/default/files/plugin/scroll-hint/scroll-hint.js"></script>
+
+<script>
+    $(function(){
+        for (let key in Drupal.behaviors) {
+            Drupal.behaviors[key].attach($('#wrapper'));
+        }
+    })
+</script>

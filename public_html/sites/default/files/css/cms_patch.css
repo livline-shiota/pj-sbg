@@ -1,0 +1,701 @@
+#header nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#header nav > ul > li:first-of-type {
+    padding-left: 0;
+}
+
+#header nav > ul > li:last-of-type {
+    padding-right: 0 !important;
+}
+
+#header nav > ul > li {
+    position: relative;
+    padding: 0 18px;
+}
+
+#header .header-option .header-lang > ul > .is-active > a {
+    color: #333333;
+    pointer-events: none;
+}
+
+.header-lang a {
+    pointer-events: all;
+}
+
+#header .header-option .header-search #edit-submit-acquia-search {
+    height: 30px;
+}
+
+#views-exposed-form-acquia-search-page-1 {
+    position: relative;
+}
+
+#header .header-option .header-funds > dl > dt {
+    background-image: url(/sites/default/files/assets/img/common/arrow_down.svg);
+}
+
+#header .header-sp-menu .header-sp-menu-list .header-sp-menu-funds .header-funds dl dt {
+    font-size: 1.6rem;
+}
+
+#header .header-sp-menu .header-sp-menu-list .header-sp-menu-funds .header-funds dl dd {
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+#header .header-sp-menu .header-sp-menu-list .header-sp-menu-funds .header-funds dl dd ul li {
+    margin-top: 20px;
+}
+
+.header-sp-menu-search .header-search-close {
+    display: none;
+}
+
+#header .header-sp-menu-search input[type="text"] {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #F0F2F4;
+    height: 40px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-image: url(/sites/default/files/assets/img/common/icon_search.svg);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: right 10px center;
+}
+
+#header .header-sp-menu .header-sp-menu-search #block-exposedformacquia-searchpage-1 {
+    display: block !important;
+    opacity: inherit !important;
+}
+
+#header .header-sp-menu #block-waibushezhifuomuacquia-searchpage {
+    display: none;
+}
+
+#header .header-sp-menu-search input[type="text"]::placeholder {
+    color: transparent;
+}
+
+.header-option i.icon-blank-wh,#header i.icon-blank-wh {
+    background-image: url(/sites/default/files/assets/img/common/icon_blank.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .header-option i.icon-blank-wh,#header i.icon-blank-wh {
+        background-image:url(/sites/default/files/assets/img/common/icon_blank_wh.svg);
+    }
+}
+
+#header .header-option .header-search input[data-drupal-selector^=edit-submit-acquia-search] {
+    outline: none;
+    background-image: none;
+}
+
+#header .header-sp-menu .header-sp-menu-search input[data-drupal-selector^=edit-submit-acquia-search] {
+    background-image: none;
+}
+
+.linkbox-small-arrow .link-arrow {
+    height: 34px;
+}
+
+.mra {
+    margin-right: auto !important;
+}
+
+.mla {
+    margin-left: auto !important;
+}
+
+.pr0 {
+    padding-right: 0 !important;
+}
+
+.pl0 {
+    padding-left: 0 !important;
+}
+
+.fs14 {
+    font-size: 1.4rem !important;
+}
+
+.fs18 {
+    font-size: 1.8rem !important;
+}
+
+.fs24 {
+    font-size: 2.4rem !important;
+}
+
+.lh140 {
+    line-height: 140%;
+}
+
+.fw-bold {
+    font-weight: bold !important;
+}
+
+/* .bg-blue01 {
+    background: #237cd6 !important;
+}
+
+.bg-green01 {
+    background: #618f5e !important;
+} */
+
+.bg-gray08 {
+    background: #f1f2f4 !important;
+}
+
+.max-w725 {
+    max-width: 725px !important;
+}
+
+.max-w800 {
+    max-width: 800px !important;
+}
+
+.h80 {
+    height: 80px !important;
+}
+
+.border-top-gray01 {
+    border-top: 1px solid #b9babc;
+}
+
+.ir-u96-bonds-value-table {
+    max-width: 100%;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-calc ul li.icon-minus:after {
+    background-image: none!important;
+    display: block;
+    content: '';
+    position: absolute;
+    top: -9px;
+    width: 20px;
+    height: 0;
+    border-top: 2px solid #333333;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-calc ul li.icon-eq:after {
+    background-image: none!important;
+    display: block;
+    content: '';
+    position: absolute;
+    top: -9px;
+    width: 20px;
+    height: 9px;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-calc {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li > div > dl > dd > P > span {
+    font-size: 2.6rem;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dd > P {
+    font-size: 1.8rem;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li.ir-u96-bonds-value-1column {
+    width: 100%;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li.ir-u96-bonds-value-1column > div {
+    width: auto;
+    margin: 0 auto;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li.ir-u96-bonds-value-1column > div > dl > dt:after {
+    width: 100%!important;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dd {
+    padding-top: 20px;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li.ir-u96-bonds-value-1column > div > dl > dd > P {
+    font-size: 2.0rem;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dt {
+    padding: 0 3px 16px;
+    letter-spacing: 0.01em;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dt.en-ir-u96-bonds-value-calc-01 {
+    padding: 0 3px 16px;
+    letter-spacing: 0.01em;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dd.en-ir-u96-bonds-value-calc-02 {
+    line-height: 1.2;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dd.en-ir-u96-bonds-value-calc-02 span {
+    margin-bottom: 5px;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-sample > dl > dd table tr td > span {
+    font-size: 2.6rem;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li.ir-u96-bonds-value-1column > div > dl > dd > P > span {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-sample > dl > dt,.ir-u96-bonds-value-table .ir-bonds-value-sample > dl > dd {
+    flex-grow: 1;
+    white-space: nowrap;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-sample > dl > dt {
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-sample > dl > dd table tr th,.ir-u96-bonds-value-table .ir-u96-bonds-value-sample > dl > dd table tr td {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-sample > dl > dd table tr td {
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li > div > dl > dt {
+    font-weight: bold;
+}
+
+.ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dt > p {
+    vertical-align: bottom!important;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li > div > dl > dd > P > span {
+    font-weight: bold;
+}
+
+.ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li:nth-child(2) {
+    background-color: #0C851E;
+}
+
+.ir-u96-table-col2 table {
+    border-collapse: separate!important;
+}
+
+.ir-u96-table-col2 table tr th,.ir-u96-table-col2 table tr td {
+    border-top: 1px solid #b9babc;
+    background-color: #f1f2f4;
+    padding: 15px 20px;
+}
+
+.ir-u96-table-col2 table tr:last-child th,.ir-u96-table-col2 table tr:last-child td {
+    border-bottom: 1px solid #b9babc;
+}
+
+.ir-u96-table-col2 table tr:only-child th,.ir-u96-table-col2 table tr:only-child td {
+    border-bottom: none;
+}
+
+.ir-u96-table-col2 table tr th span {
+    display: inline-block;
+}
+
+.ir-u96-table-col2 table tr td span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ir-u96-table-col2 table tr td,.ir-u96-table-col2 table tr td span {
+    font-size: 1.4rem;
+}
+
+.ir-u96-table-col2 table tr th ul,.ir-u96-table-col2 table tr td ul {
+    border-top: 1px solid #b9babc;
+    vertical-align: middle;
+}
+
+.ir-u96-table-col2 table tr ul li:nth-child(n+2) {
+    margin: 15px 0 0 0;
+}
+
+.ir-u96-table-col2 table tr th ul {
+    margin: 20px -20px 0 15px;
+    padding: 15px 10px 0 0;
+}
+
+.ir-u96-table-col2 table tr td {
+    background-color: #fff;
+}
+
+.ir-u96-table-col2 table tr td ul {
+    margin: 20px -20px 0 -20px;
+    padding: 15px 20px 0 0;
+}
+
+.ir-u96-table-col2 table tr th ul li,.ir-u96-table-col2 table tr td ul li {
+    display: table;
+    width: 100%;
+}
+
+.ir-u96-table-col2 table tr th ul li {
+    margin: 0 15px 0 0;
+}
+
+.ir-u96-table-col2 table tr td ul li {
+    font-size: 1.4rem;
+}
+
+.ir-u96-table-col2 table tr th ul li span,.ir-u96-table-col2 table tr td ul li span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+    .u-pc-d-b {
+        display:block;
+    }
+
+    .u-pc-d-n {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .u-sp-d-b {
+        display:block;
+    }
+
+    .u-sp-d-n {
+        display: none;
+    }
+
+    .fs20-sp {
+        font-size: 2.0rem !important;
+    }
+
+    .fs10-sp {
+        font-size: 1.0rem !important;
+    }
+
+    .fs12-sp {
+        font-size: 1.2rem !important;
+    }
+
+    .fs14-sp {
+        font-size: 1.4rem !important;
+    }
+
+    .fs16-sp {
+        font-size: 1.6rem !important;
+    }
+
+    .h60-sp {
+        height: 60px !important;
+    }
+
+    .ir-u96-bonds-value-table .ir-bonds-value-sample > dl > dt,.ir-u96-bonds-value-table .ir-bonds-value-sample > dl > dd {
+        white-space: normal;
+    }
+
+    .ir-bonds-value-table .ir-bonds-value-sample {
+        margin-top: 30px;
+    }
+
+    .ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div {
+        width: auto !important;
+        margin: 0 auto;
+        padding: 10px 1px;
+    }
+
+    .ir-u96-bonds-value-table .ir-bonds-value-calc > ul > li > div > dl > dt:after {
+        width: 100%;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li {
+        width: calc(33.33333% - 25px) !important;
+        margin-right: 22px;
+        margin-bottom: 0 !important;
+        float: none !important;
+        flex-grow: 1;
+    }
+
+    .ir-u96-table-col2 table tr th ul {
+        margin: 30px -20px 0 15px;
+        padding: 20px 10px 0 0;
+    }
+
+    .ir-u96-table-col2 table tr td,.ir-u96-table-col2 table tr td span {
+        font-size: 1.2rem;
+    }
+
+    .ir-u96-table-col2 table tr td ul {
+        margin: 15px -20px 0 -20px;
+        padding: 22px 20px 0 0;
+    }
+
+    .ir-u96-table-col2 table tr td ul li {
+        font-size: 1.2rem;
+    }
+
+    .ir-u96-table-col2 table tr th ul li:nth-child(n+2) {
+        margin: 15px 15px 0 0;
+    }
+
+    .ir-u96-table-col2 table tr td ul li:nth-child(n+2) {
+        margin: 15px 0 0 0;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li > div > dl > dt {
+        font-size: 1.6rem!important;
+        font-weight: bold;
+    }
+
+    .ir-u96-bonds-value-table .en-ir-u96-bonds-value-calc > ul > li > div > dl > dt {
+        font-size: 1.2rem!important;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li > div > dl > dd > P {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li.ir-u96-bonds-value-1column > div > dl > dd > P {
+        font-size: 1.6rem;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li > div > dl > dd > P > span {
+        font-size: 1.8rem;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li:last-child {
+        margin-right: 0;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li.ir-u96-bonds-value-1column > div > dl > dt:after {
+        display: block;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li:first-of-type:after {
+        left: auto !important;
+        right: -15px !important;
+        bottom: 50% !important;
+        margin-bottom: -9px !important;
+        width: 10px;
+        height: 10px;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li:last-of-type:after {
+        left: -15px !important;
+        bottom: 50%;
+        width: 10px;
+        height: 10px;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc ul li.icon-minus:after {
+        top: 5px;
+        width: 10px;
+        height: 5px !important;
+        margin-bottom: -5px !important;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc ul li.icon-eq:after {
+        height: 5px!important;
+        margin-bottom: -5px!important;
+    }
+
+    .ir-u96-bonds-value-table .ir-u96-bonds-value-calc > ul > li > div > dl > dt:after {
+        width: 58px !important;
+    }
+
+    .ir-u96-table-col2 table tr th,.ir-u96-table-col2 table tr td {
+        display: table-cell;
+        width: 50%!important;
+        font-size: 1.2rem;
+    }
+
+    .ir-u96-table-col2 table tr th span {
+        display: inline-block;
+    }
+
+    .ir-u96-table-col2 table tr td span {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.newslayout-pickup1 .newslayout-pickup-middle .newslayout-pickup-bg > img,.newslayout-pickup2 .newslayout-pickup-middle .newslayout-pickup-bg > img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+#header nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#header nav > ul > li:first-of-type {
+    padding-left: 0;
+}
+
+#header nav > ul > li:last-of-type {
+    padding-right: 0 !important;
+}
+
+#header nav > ul > li {
+    position: relative;
+    padding: 0 18px;
+}
+
+#header .header-option .header-lang > ul > .is-active > a {
+    color: #333333;
+    pointer-events: none;
+}
+
+.header-lang a {
+    pointer-events: all;
+}
+
+#header .header-option .header-search #edit-submit-acquia-search {
+    height: 30px;
+}
+
+#views-exposed-form-acquia-search-page-1 {
+    position: relative;
+}
+
+#header .header-option .header-funds > dl > dt {
+    background-image: url(/sites/default/files/assets/img/common/arrow_down.svg);
+}
+
+#header .header-sp-menu .header-sp-menu-list .header-sp-menu-funds .header-funds dl dt {
+    font-size: 1.6rem;
+}
+
+#header .header-sp-menu .header-sp-menu-list .header-sp-menu-funds .header-funds dl dd {
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+#header .header-sp-menu .header-sp-menu-list .header-sp-menu-funds .header-funds dl dd ul li {
+    margin-top: 20px;
+}
+
+.header-sp-menu-search .header-search-close {
+    display: none;
+}
+
+#header .header-sp-menu-search input[type="text"] {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #F0F2F4;
+    height: 40px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-image: url(/sites/default/files/assets/img/common/icon_search.svg);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: right 10px center;
+}
+
+#header .header-sp-menu .header-sp-menu-search #block-exposedformacquia-searchpage-1 {
+    display: block !important;
+    opacity: inherit !important;
+}
+
+#header .header-sp-menu #block-waibushezhifuomuacquia-searchpage {
+    display: none;
+}
+
+#header .header-sp-menu-search input[type="text"]::placeholder {
+    color: transparent;
+}
+
+.header-option i.icon-blank-wh,#header i.icon-blank-wh {
+    background-image: url(/sites/default/files/assets/img/common/icon_blank.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .header-option i.icon-blank-wh,#header i.icon-blank-wh {
+        background-image:url(/sites/default/files/assets/img/common/icon_blank_wh.svg);
+    }
+}
+
+#header .header-option .header-search input[data-drupal-selector^=edit-submit-acquia-search] {
+    outline: none;
+    background-image: none;
+}
+
+#header .header-sp-menu .header-sp-menu-search input[data-drupal-selector^=edit-submit-acquia-search] {
+    background-image: none;
+}
+
+.linkbox-small-arrow .link-arrow {
+    height: 34px;
+}
+
+.iframe-wrapper-stock-chart > iframe {
+    width: 100%;
+    height: 820px;
+}
+
+.iframe-wrapper-stock-table > iframe {
+    width: 100%;
+    height: 1400px;
+}
+
+@media screen and (max-width: 768px) {
+    .iframe-wrapper-stock-chart > iframe {
+        height:990px;
+    }
+
+    .iframe-wrapper-stock-table > iframe {
+        width: 100%;
+        height: 1380px;
+    }
+}
+
+.newslayout-pickup1 .newslayout-pickup-middle .newslayout-pickup-bg > img,.newslayout-pickup2 .newslayout-pickup-middle .newslayout-pickup-bg > img {
+    max-width: 100% !important;
+    height: auto !important;
+}
